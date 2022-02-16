@@ -1,0 +1,8 @@
+[user]
+	name = Andreas Weber
+	email = weber.andreas@gmail.com
+	signingkey = B65E99F4
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg

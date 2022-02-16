@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+tag="main"
+
+while [ : ]; do
+  case "$1" in
+    --tag)
+        tag=$2
+        shift
+        shift
+        ;;
+    --) shift;
+        break
+        ;;
+    *) break;;
+  esac
+done
+
+
+for arg in "$@"
+do
+  if [[ -z $args ]]; then
+    args=$arg
+    continue
+  fi
+  if [[ $arg == -* ]] || ! [[ "$arg" =~ ( |\') ]] || [ $arg == $1 ]; then
+    args+=" $arg"
+  else
+    args+=" \"$arg\""
+  fi
+done
+
+echo $args
+
+mani exec --silent --omit-empty --tags $tag -- "$args"
+

@@ -1,0 +1,114 @@
+import:
+  - ~/.dotfiles/settings/mani.yaml
+env:
+  defaultbranch: master
+projects:
+  bluepaint:
+    url: https://github.com/AnWeber/bluepaint.git
+    tags:
+      - vscode
+      - npm
+      - main
+
+  dockerfiles:
+    url: https://github.com/AnWeber/dockerfiles.git
+
+  dot-icons:
+    url: https://github.com/AnWeber/dot-icons.git
+    tags:
+      - vscode
+      - npm
+      - main
+
+  hookpoint:
+    path: httpyac/hookpoint
+    url: https://github.com/AnWeber/hookpoint.git
+    tags:
+      - npm
+      - main
+
+  httpbook:
+    path: httpyac/httpbook
+    url: https://github.com/AnWeber/httpbook.git
+    tags:
+      - vscode
+      - npm
+      - main
+
+  httpbook-grid:
+    path: httpyac/httpbook-grid
+    url: https://github.com/AnWeber/httpbook-grid.git
+    tags:
+      - vscode
+      - npm
+      - main
+  httpbook-monacorenderer:
+    path: httpyac/httpbook-monacorenderer
+    url:  https://github.com/AnWeber/httpbook-monacorenderer.git
+    tags:
+      - vscode
+      - npm
+      - main
+
+  httpyac:
+    path: httpyac/httpyac
+    url: https://github.com/AnWeber/httpyac.git
+    tags:
+      - main
+      - npm
+
+  httpyac.github.io:
+    path: httpyac/httpyac.github.io
+    url: https://github.com/httpyac/httpyac.github.io.git
+    tags:
+      - main
+      - npm
+
+  vscode-httpyac:
+    path: httpyac/vscode-httpyac
+    url: https://github.com/AnWeber/vscode-httpyac.git
+    tags:
+      - main
+      - vscode
+
+  mapstruct-springlazy:
+    url: https://github.com/AnWeber/mapstruct-springlazy.git
+    tags:
+      - main
+      - java
+
+  reveal-button:
+    url: https://github.com/AnWeber/reveal-button.git
+    tags:
+      - main
+      - vscode
+
+  sessionLogger:
+    url: https://github.com/AnWeber/sessionLogger.git
+    tags:
+      - main
+      - dotnet
+
+  vscode-gitbuttons:
+    url: https://github.com/AnWeber/vscode-gitbuttons.git
+    tags:
+      - main
+      - vscode
+      - npm
+
+  vscode-statusbar-command:
+    url: https://github.com/AnWeber/vscode-statusbar-command.git
+    tags:
+      - vscode
+
+  vue-cli-plugin-compression:
+    url: https://github.com/AnWeber/vue-cli-plugin-compression.git
+    tags:
+      - vscode
+      - npm
+
+  vscode-timewarrior:
+    url: https://github.com/AnWeber/vscode-timewarrior.git
+    tags:
+      - vscode
+      - npm

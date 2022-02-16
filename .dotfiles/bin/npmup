@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+
+prefix="$1"
+version="$2"
+[ -z ${version+x} ] && version=latest
+
+if [ -f "package.json" ]; then
+
+  for dep in $(cat package.json | jq '.dependencies | select( . != null )  | keys | map(select(startswith('\"$prefix\"')))' | awk -F\" '{print $2}')
+  do
+    beforeVersion=$(cat package.json | grep -q "\"$dep\"" | awk -F\" '{print $4}')
+    npm i --silent -P "${dep}@${version}"
+    echo "$dep $beforeVersion => $(cat package.json | grep "\"$dep\"" | awk -F\" '{print $4}')"
+  done
+
+  for dep in $(cat package.json | jq '.dependencies | select( . != null )  | keys | map(select(startswith('\"$prefix\"')))'| awk -F\" '{print $2}')
+  do
+    beforeVersion=$(cat package.json | grep -q "\"$dep\"" | awk -F\" '{print $4}')
+    npm i --silent -D "${dep}@${version}"
+    echo "$dep $beforeVersion => $(cat package.json | grep -q "\"$dep\"" | awk -F\" '{print $4}')"
+  done
+fi

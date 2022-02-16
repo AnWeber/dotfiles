@@ -1,0 +1,51 @@
+[user]
+  name = Andreas Weber
+  email = weber.andreas@gmail.com
+[core]
+  editor = code --wait
+	pager = cat
+	excludesFile = ~/.gitignore
+[pull]
+  rebase = true
+[rebase]
+	autoStash = true
+[includeIf "gitdir:~/github/"]
+    path = ~/github/.gitconfig
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
+[includeIf "~/work.gitconfig"]
+  path = ~/work.gitconfig
+[credential "https://github.com"]
+  helper = !~/.asdf/shims/gh auth git-credential
+[credential "https://gist.github.com"]
+  helper = !~/.asdf/shims/gh auth git-credential
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+[color]
+  ui = auto
+
+[alias]
+	branch-clean = !bash ~/.dotfiles/git/git-branch-clean.sh
+	branch-default = !bash ~/.dotfiles/git/git-branch-default.sh
+	bv = !bash ~/.dotfiles/git/git-branch-view.sh
+  current = rev-parse --abbrev-ref HEAD
+  dev = !bash ~/.dotfiles/git/git-dev.sh
+  main = !bash ~/.dotfiles/git/git-dev.sh
+  dirty = !bash ~/.dotfiles/git/git-dirty.sh
+	erase = !bash ~/.dotfiles/git/git-erase.sh
+  flinch = !bash ~/.dotfiles/git/git-flinch.sh
+  lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+  ls = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate -l
+  current-tag = !bash ~/.dotfiles/git/git-tag-current.sh
+  my = !bash ~/.dotfiles/git/git-my.sh
+  open = !bash ~/.dotfiles/git/git-open.sh
+  pull-all = !bash ~/.dotfiles/git/git-pull-all.sh
+  stale = !bash ~/.dotfiles/git/git-stale.sh
+  stash-all=stash --include-untracked
+  undo = reset HEAD~1 --mixed
+  unstage = reset HEAD --
+
+

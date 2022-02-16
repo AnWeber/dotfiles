@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+monitor_off="on"
+
+while [ : ]; do
+  case "$1" in
+    off)
+        monitor_off="off"
+        shift
+        shift
+        ;;
+    *) break;;
+  esac
+done
+
+
+
+xset -display :0.0 dpms force $monitor_off
+

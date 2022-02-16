@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+name=$(jq -r .name ./package.json)
+npm view $name --json

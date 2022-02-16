@@ -1,0 +1,85 @@
+tasks:
+  git-status:
+    desc: show working tree status
+    cmd: git status -s
+
+  git-last-commit-msg:
+    desc: show last commit
+    cmd: git log -1 --pretty=%B
+
+  git-behind-origin:
+    desc: show last commit date
+    cmd: |
+      branch=$(git rev-parse --abbrev-ref HEAD)
+      git rev-list ${branch}..origin/${branch} --count
+
+  git-last-commit-date:
+    desc: show last commit date
+    cmd: |
+      git log -1 --format="%cd (%cr)" -n 1 --date=format:"%d  %b %y" \
+      | sed 's/ //'
+
+  git-branch:
+    desc: show current git branch
+    cmd: |
+      echo $(git rev-parse --abbrev-ref HEAD)
+  view:
+    spec: table
+    target: main
+    desc: dashboard view
+    commands:
+      - task: git-branch
+      - task: git-last-commit-date
+      - task: git-behind-origin
+      - cmd: git dirty
+
+targets:
+  default:
+    all: true
+  main:
+    all: true
+  npm:
+    tags:
+      - npm
+
+shell: zsh
+
+specs:
+  default:
+    output: text
+    omit_empty: true
+  text:
+    output: text
+    omit_empty: true
+    prefix_colors: ["green", "blue", "red", "yellow", "magenta", "cyan"]
+  table:
+    output: table
+    omit_empty: true
+
+
+themes:
+  default:
+    text:
+      prefix: true
+      prefix_colors: ["green", "blue", "red", "yellow", "magenta", "cyan"]
+      header: false
+    table:
+      style: default
+      options:
+        draw_border: false
+        separate_columns: false
+        separate_header: true
+        separate_rows: true
+        separate_footer: false
+      color:
+        header:
+          project:
+            fg: green
+            attr: normal
+          output:
+            fg: green
+            attr: normal
+
+        row:
+          project:
+            fg: blue

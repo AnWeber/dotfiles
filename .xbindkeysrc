@@ -1,0 +1,34 @@
+#{
+"xvkbd -xsendevent -text '{'"
+    m:0xc + c:16
+    Control+Alt + 7
+
+#[
+"xvkbd -xsendevent -text '['"
+    m:0xc + c:17
+    Control+Alt + 8
+
+#]
+"xvkbd -xsendevent -text ']'"
+    m:0xc + c:18
+    Control+Alt + 9
+
+#}
+"xvkbd -xsendevent -text '}'"
+    m:0xc + c:19
+    Control+Alt + 0
+
+#\
+"xvkbd -xsendevent -text '\[backslash]'"
+    m:0xc + c:20
+    Control+Alt + ssharp
+
+#~
+"xvkbd -xsendevent -text '\[asciitilde]'"
+    m:0xc + c:35
+    Control+Alt + plus
+
+#µ
+"xvkbd -xsendevent -text '\[mu]'"
+    m:0xc + c:58
+    Control+Alt + m
