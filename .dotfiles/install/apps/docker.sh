@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 if ! type "docker" > /dev/null; then
   sudo apt update
+  echo "update iptables to 1"
   sudo update-alternatives --config iptables
   sudo apt-get install \
       ca-certificates \

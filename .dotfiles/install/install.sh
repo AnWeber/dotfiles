@@ -10,6 +10,8 @@ then
   export $(cat  ~/work.env | xargs)
 fi
 
+~/.dotfiles/install/apps/git.sh
+~/.dotfiles/install/apps/fonts.sh
 ~/.dotfiles/install/apps/xbindkeys.sh
 ~/.dotfiles/install/apps/pip.sh
 ~/.dotfiles/install/apps/zsh.sh
