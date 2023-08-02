@@ -27,7 +27,7 @@ for file in $(find ~ -maxdepth 1 -name '*.env' -type f -prune | sort -nr  | tac 
 done
 
 
-export PATH="$HOME/.dotfiles/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.dotfiles/bin:$PATH"
 
 [[ ! -f ~/.dotfiles/zsh/default.zsh ]] || source ~/.dotfiles/zsh/default.zsh
 [[ ! -f ~/${LOCALENV}.zsh ]] || source ~/${LOCALENV}.zsh

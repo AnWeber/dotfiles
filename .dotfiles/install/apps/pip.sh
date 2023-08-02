@@ -1,7 +1,7 @@
 
 if ! command -v pip3 &> /dev/null
 then
-  sudo apt-get install python-pip
-  pip3 install pygmentize
+  sudo apt-get install python3-pip
+  pip3 install Pygments
 fi
 
