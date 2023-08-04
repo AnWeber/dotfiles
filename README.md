@@ -5,7 +5,7 @@ https://www.atlassian.com/git/tutorials/dotfiles
 ### Init
 ```
 git init --bare $HOME/.dotfiles_repo
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles_repo/ --work-tree=$HOME'
 config config status.showUntrackedFiles no
 ```
 
