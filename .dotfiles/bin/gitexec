@@ -31,6 +31,9 @@ do
 done
 
 echo $args
-
-mani exec --silent --omit-empty --tags $tag -- "$args"
+if [[ $tag == "all" ]]; then
+  mani exec --silent --omit-empty --all -- "$args"
+else
+  mani exec --silent --omit-empty --tags $tag -- "$args"
+fi
 
