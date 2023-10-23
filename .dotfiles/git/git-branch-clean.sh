@@ -1,7 +1,2 @@
-
-defaultbranch=$(git branch-default)
-merged=$(git branch --merged $defaultbranch | egrep -v "(^\*|master|main|dev|development)$")
-
-for branch in ${merged[@]}; do
-  git branch -d ${branch}
-done
+git fetch -p
+git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r git branch -d
