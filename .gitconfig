@@ -3,12 +3,15 @@
   email = weber.andreas@gmail.com
 [core]
   editor = code --wait
-	pager = cat
+  pager = delta
 	excludesFile = ~/.gitignore
 [pull]
   rebase = true
 [rebase]
 	autoStash = true
+[merge]
+  conflictstyle = diff3
+
 [includeIf "gitdir:~/github/"]
     path = ~/github/.gitconfig
 [includeIf "gitdir:~/work/"]
@@ -33,7 +36,6 @@
 	bv = !bash ~/.dotfiles/git/git-branch-view.sh
   current = rev-parse --abbrev-ref HEAD
   dev = !bash ~/.dotfiles/git/git-dev.sh
-  main = !bash ~/.dotfiles/git/git-dev.sh
   dirty = !bash ~/.dotfiles/git/git-dirty.sh
 	erase = !bash ~/.dotfiles/git/git-erase.sh
   flinch = !bash ~/.dotfiles/git/git-flinch.sh
@@ -47,5 +49,47 @@
   stash-all=stash --include-untracked
   undo = reset HEAD~1 --mixed
   unstage = reset HEAD --
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+[delta]
+  features = bluepaint vscode
+  side-by-side = true
+  navigate = true
+  true-color = always
+
+[delta "vscode"]
+  hyperlinks = true
+  hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+
+[delta "bluepaint"]
+    light = true
+    pink = "#ffe0e0"
+    dark-pink = "#ffc0c0"
+    green = "#d0ffd0"
+    dark-green = "#a0efa0"
+    blue = "#1565C0"
+    grey = "#CCCCCC"
+    line-numbers-minus-style = bluepaint.grey
+    line-numbers-plus-style = bluepaint.grey
+    line-numbers-left-style = bluepaint.grey
+    line-numbers-right-style = bluepaint.grey
+    line-numbers-zero-style = bluepaint.grey
+    line-numbers-left-format = "{nm:>3} │"
+    line-numbers-right-format = "{np:>3} │"
+    minus-style = syntax bluepaint.pink
+    minus-emph-style = syntax bluepaint.dark-pink
+    minus-non-emph-style = minus-style
+    plus-style = syntax bluepaint.green
+    plus-emph-style = syntax bluepaint.dark-green
+    plus-non-emph-style = plus-style
+    minus-empty-line-marker-style = minus-style
+    plus-empty-line-marker-style = plus-style
+    commit-decoration-style = white
+    file-style = bluepaint.blue
+    hunk-header-style = omit
+    syntax-theme = GitHub
+    zero-style = syntax
 
 
