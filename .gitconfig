@@ -93,3 +93,42 @@
     zero-style = syntax
 
 
+[delta]
+    features = bluepaint vscode
+    navigation = true
+    line-numbers = true
+    side-by-side = true
+
+[delta "vscode"]
+   hyperlinks = true
+   hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+
+[delta "bluepaint"]
+    light = true
+    pink = 224
+    dark-pink = 212
+    green = 156
+    dark-green = 078
+    blue = 004
+    grey = 247
+    minus-style = normal bluepaint.pink
+    minus-emph-style = normal bluepaint.dark-pink
+    minus-non-emph-style = minus-style
+    plus-style = syntax bluepaint.green
+    plus-emph-style = syntax bluepaint.dark-green
+    plus-non-emph-style = plus-style
+    minus-empty-line-marker-style = minus-style
+    plus-empty-line-marker-style = plus-style
+    commit-decoration-style = bluepaint.blue ol
+    commit-style = raw
+    hunk-header-style = omit
+    syntax-theme = ansi
+    file-style = bluepaint.blue
+    zero-style = syntax
+    line-numbers-left-format = "│{nm:>3}│"
+    line-numbers-right-format = "│{np:>3}│"1
+    line-numbers-left-style = bluepaint.grey
+    line-numbers-minus-style = bluepaint.grey
+    line-numbers-plus-style = bluepaint.grey
+    line-numbers-right-style = bluepaint.grey
+    line-numbers-zero-style = bluepaint.grey

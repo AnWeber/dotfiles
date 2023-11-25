@@ -1,5 +1,6 @@
-github-cli 2.31.0
+github-cli 2.39.1
 java openjdk-17
+delta 0.16.5
 jq 1.6
 mani 0.25.0
-nodejs 18.6.0
+volta 1.1.1

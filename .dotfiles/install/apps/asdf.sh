@@ -5,6 +5,7 @@ if [ ! -d $HOME/.asdf ]; then
   asdf plugin-add jq https://github.com/AZMCode/asdf-jq.git
   asdf plugin-add github-cli https://github.com/bartlomiejdanek/asdf-github-cli.git
   asdf plugin add mani https://github.com/anweber/asdf-mani.git
+  asdf plugin add delta https://github.com/andweeb/asdf-delta.git
   asdf install --add
 fi
 
@@ -12,9 +13,9 @@ if [ -z ${ASDF_DEFAULT_TOOL_VERSIONS_FILENAME+x} ]; then
   ASDF_DEFAULT_TOOL_VERSIONS_FILENAME=".tool-versions"
 fi
 
-if grep -q "nodejs" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
-  echo "NodeJS install"
-  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+if grep -q "volta" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "volta install"
+  asdf plugin add volta https://github.com/anweber/asdf-volta
 fi
 if grep -q "java" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "java install"

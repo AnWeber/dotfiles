@@ -37,3 +37,5 @@ source $ZSH/oh-my-zsh.sh
 setopt globdots
 
 export GPG_TTY=$(tty)
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
