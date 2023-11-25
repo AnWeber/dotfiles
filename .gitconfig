@@ -53,45 +53,6 @@
 [interactive]
     diffFilter = delta --color-only --features=interactive
 
-[delta]
-  features = bluepaint vscode
-  side-by-side = true
-  navigate = true
-  true-color = always
-
-[delta "vscode"]
-  hyperlinks = true
-  hyperlinks-file-link-format = "vscode://file/{path}:{line}"
-
-[delta "bluepaint"]
-    light = true
-    pink = "#ffe0e0"
-    dark-pink = "#ffc0c0"
-    green = "#d0ffd0"
-    dark-green = "#a0efa0"
-    blue = "#1565C0"
-    grey = "#CCCCCC"
-    line-numbers-minus-style = bluepaint.grey
-    line-numbers-plus-style = bluepaint.grey
-    line-numbers-left-style = bluepaint.grey
-    line-numbers-right-style = bluepaint.grey
-    line-numbers-zero-style = bluepaint.grey
-    line-numbers-left-format = "{nm:>3} │"
-    line-numbers-right-format = "{np:>3} │"
-    minus-style = syntax bluepaint.pink
-    minus-emph-style = syntax bluepaint.dark-pink
-    minus-non-emph-style = minus-style
-    plus-style = syntax bluepaint.green
-    plus-emph-style = syntax bluepaint.dark-green
-    plus-non-emph-style = plus-style
-    minus-empty-line-marker-style = minus-style
-    plus-empty-line-marker-style = plus-style
-    commit-decoration-style = white
-    file-style = bluepaint.blue
-    hunk-header-style = omit
-    syntax-theme = GitHub
-    zero-style = syntax
-
 
 [delta]
     features = bluepaint vscode
@@ -111,24 +72,24 @@
     dark-green = 078
     blue = 004
     grey = 247
-    minus-style = normal bluepaint.pink
-    minus-emph-style = normal bluepaint.dark-pink
-    minus-non-emph-style = minus-style
-    plus-style = syntax bluepaint.green
-    plus-emph-style = syntax bluepaint.dark-green
-    plus-non-emph-style = plus-style
-    minus-empty-line-marker-style = minus-style
-    plus-empty-line-marker-style = plus-style
-    commit-decoration-style = bluepaint.blue ol
+    commit-decoration-style = bluepaint.blue
     commit-style = raw
-    hunk-header-style = omit
-    syntax-theme = ansi
     file-style = bluepaint.blue
-    zero-style = syntax
+    hunk-header-style = omit
     line-numbers-left-format = "│{nm:>3}│"
-    line-numbers-right-format = "│{np:>3}│"1
     line-numbers-left-style = bluepaint.grey
     line-numbers-minus-style = bluepaint.grey
     line-numbers-plus-style = bluepaint.grey
+    line-numbers-right-format = "│{np:>3}│"1
     line-numbers-right-style = bluepaint.grey
     line-numbers-zero-style = bluepaint.grey
+    minus-emph-style = normal bluepaint.dark-pink
+    minus-empty-line-marker-style = minus-style
+    minus-non-emph-style = minus-style
+    minus-style = normal bluepaint.pink
+    plus-emph-style = syntax bluepaint.dark-green
+    plus-empty-line-marker-style = plus-style
+    plus-non-emph-style = plus-style
+    plus-style = syntax bluepaint.green
+    syntax-theme = ansi
+    zero-style = syntax
