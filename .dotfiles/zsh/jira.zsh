@@ -1,4 +1,4 @@
-if [[ -v JIRA_URL ]]; then
-  plugins+=('jira')
-fi
-alias jito="jira branch"
+
+alias jito="cmd.exe /c start \"${jira_url}/browse/$(git jira)\" &> /dev/null"
+alias jiv="jira issue view $(git jira) | cat"
+alias jis="jira issue view $(git jira) | cat"
