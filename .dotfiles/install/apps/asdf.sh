@@ -47,7 +47,8 @@ if grep -q "kafkactl" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
 fi
 
 if grep -q "golang" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
-  echo "gloang install"
+  echo "golang install"
   asdf plugin add asdf-golang https://github.com/kennyp/asdf-golang.git
+  asdf plugin add golangci-lint https://github.com/hypnoglow/asdf-golangci-lint.git
 fi
 asdf install

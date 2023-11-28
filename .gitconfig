@@ -18,15 +18,22 @@
     path = ~/work/.gitconfig
 [includeIf "~/work.gitconfig"]
   path = ~/work.gitconfig
+
 [credential "https://github.com"]
-  helper = !~/.asdf/shims/gh auth git-credential
+  helper = !gh auth git-credential
+
 [credential "https://gist.github.com"]
-  helper = !~/.asdf/shims/gh auth git-credential
+  helper = !gh auth git-credential
+
+[credential "https://gitlab.com"]
+	helper = !glab auth git-credential
+
 [filter "lfs"]
   required = true
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
+
 [color]
   ui = auto
 
@@ -39,6 +46,7 @@
   dirty = !bash ~/.dotfiles/git/git-dirty.sh
 	erase = !bash ~/.dotfiles/git/git-erase.sh
   flinch = !bash ~/.dotfiles/git/git-flinch.sh
+  jira = !bash ~/.dotfiles/git/git-jira.sh
   lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
   ls = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate -l
   current-tag = !bash ~/.dotfiles/git/git-tag-current.sh
