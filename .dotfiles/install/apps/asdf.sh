@@ -12,6 +12,11 @@ fi
 if [ -z ${ASDF_DEFAULT_TOOL_VERSIONS_FILENAME+x} ]; then
   ASDF_DEFAULT_TOOL_VERSIONS_FILENAME=".tool-versions"
 fi
+if grep -q "jira-cli" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "jira-cli install"
+  asdf plugin add jira-cli https://github.com/anweber/asdf-jira-cli.git
+fi
+
 
 if grep -q "volta" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "volta install"
