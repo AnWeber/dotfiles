@@ -13,3 +13,9 @@ if type "docker" > /dev/null; then
       disown
   fi
 fi
+
+alias docker-prune=' \
+  docker container prune -f ; \
+  docker image prune -f ; \
+  docker network prune -f ; \
+  docker volume prune -f '
