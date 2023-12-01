@@ -50,5 +50,6 @@ if grep -q "golang" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "golang install"
   asdf plugin add asdf-golang https://github.com/kennyp/asdf-golang.git
   asdf plugin add golangci-lint https://github.com/hypnoglow/asdf-golangci-lint.git
+  asdf plugin add gofumpt
 fi
 asdf install
