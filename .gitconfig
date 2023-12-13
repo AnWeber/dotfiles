@@ -38,10 +38,12 @@
   ui = auto
 
 [alias]
+  behind-origin = "!git rev-list $(git current)..origin/$(git current) --count |  awk -F ""0""  '{ print $1; }'"
 	branch-clean = !bash ~/.dotfiles/git/git-branch-clean.sh
 	branch-default = !bash ~/.dotfiles/git/git-branch-default.sh
 	bv = !bash ~/.dotfiles/git/git-branch-view.sh
   current = rev-parse --abbrev-ref HEAD
+  dead = "!git branch -vv | grep ': gone]'|  grep -v '\\*'  | awk '{ print $1; }'"
   dev = !bash ~/.dotfiles/git/git-dev.sh
   dirty = !bash ~/.dotfiles/git/git-dirty.sh
 	erase = !bash ~/.dotfiles/git/git-erase.sh
