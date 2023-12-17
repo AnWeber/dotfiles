@@ -49,11 +49,22 @@
 	erase = !bash ~/.dotfiles/git/git-erase.sh
   flinch = !bash ~/.dotfiles/git/git-flinch.sh
   jira = !bash ~/.dotfiles/git/git-jira.sh
+	last = checkout @{-1}
+  last-diff = "!f() { \
+            project_root_dir=$(git rev-parse --show-toplevel); \
+            echo finding full file path of $1 in $project_root_dir; \
+            filepath=$(find $project_root_dir -type f -name $1); \
+            echo full file path $filepath; \
+            last_modified_commit_hash=$(git rev-list -1 HEAD $filepath); \
+            echo last commit file modified $last_modified_commit_hash; \
+            git difftool $last_modified_commit_hash^ $filepath; \
+       }; f"
   lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
   ls = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate -l
   current-tag = !bash ~/.dotfiles/git/git-tag-current.sh
   my = !bash ~/.dotfiles/git/git-my.sh
   open = !bash ~/.dotfiles/git/git-open.sh
+	re = !git rebase -i `git merge-base HEAD master`
   pull-all = !bash ~/.dotfiles/git/git-pull-all.sh
   stale = !bash ~/.dotfiles/git/git-stale.sh
   stash-all=stash --include-untracked
