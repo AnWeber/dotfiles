@@ -1,7 +1,7 @@
 import:
   - ~/.dotfiles/settings/mani.yaml
 env:
-  defaultbranch: master
+  defaultbranch: main
 projects:
   bluepaint:
     url: https://github.com/AnWeber/bluepaint.git
@@ -9,24 +9,20 @@ projects:
       - vscode
       - npm
       - main
-
   dockerfiles:
     url: https://github.com/AnWeber/dockerfiles.git
-
   dot-icons:
     url: https://github.com/AnWeber/dot-icons.git
     tags:
       - vscode
       - npm
       - main
-
   hookpoint:
     path: httpyac/hookpoint
     url: https://github.com/AnWeber/hookpoint.git
     tags:
       - npm
       - main
-
   httpbook:
     path: httpyac/httpbook
     url: https://github.com/AnWeber/httpbook.git
@@ -34,7 +30,6 @@ projects:
       - vscode
       - npm
       - main
-
   httpbook-grid:
     path: httpyac/httpbook-grid
     url: https://github.com/AnWeber/httpbook-grid.git
@@ -44,71 +39,137 @@ projects:
       - main
   httpbook-monacorenderer:
     path: httpyac/httpbook-monacorenderer
-    url:  https://github.com/AnWeber/httpbook-monacorenderer.git
+    url: https://github.com/AnWeber/httpbook-monacorenderer.git
     tags:
       - vscode
       - npm
       - main
-
   httpyac:
-    path: httpyac/httpyac
-    url: https://github.com/AnWeber/httpyac.git
+    path: ./httpyac/httpyac
+    url: |
+      https://github.com/AnWeber/httpyac.git
     tags:
-      - main
-      - npm
-
+      - httpyac
   httpyac.github.io:
     path: httpyac/httpyac.github.io
     url: https://github.com/httpyac/httpyac.github.io.git
     tags:
       - main
       - npm
-
   vscode-httpyac:
-    path: httpyac/vscode-httpyac
-    url: https://github.com/AnWeber/vscode-httpyac.git
+    path: ./vscode-httpyac
+    url: |
+      https://github.com/vojta7/vscode-httpyac.git
     tags:
+      - httpyac
       - main
+      - npm
       - vscode
-
   mapstruct-springlazy:
     url: https://github.com/AnWeber/mapstruct-springlazy.git
     tags:
       - main
       - java
-
   reveal-button:
     url: https://github.com/AnWeber/reveal-button.git
     tags:
       - main
       - vscode
-
   sessionLogger:
     url: https://github.com/AnWeber/sessionLogger.git
     tags:
-      - main
       - dotnet
-
+      - java
   vscode-gitbuttons:
     url: https://github.com/AnWeber/vscode-gitbuttons.git
     tags:
       - main
       - vscode
       - npm
-
   vscode-statusbar-command:
     url: https://github.com/AnWeber/vscode-statusbar-command.git
     tags:
       - vscode
-
   vue-cli-plugin-compression:
     url: https://github.com/AnWeber/vue-cli-plugin-compression.git
     tags:
       - vscode
       - npm
-
   vscode-timewarrior:
     url: https://github.com/AnWeber/vscode-timewarrior.git
     tags:
       - vscode
       - npm
+  asdf-kafkactl:
+    path: ./asdf-kafkactl
+    url: |
+      https://github.com/AnWeber/asdf-kafkactl.git
+    tags: []
+  lit-pdf:
+    path: ./lit-pdf
+    url: |
+      https://github.com/AnWeber/lit-pdf.git
+  asdf-jira-cli:
+    path: ./asdf-jira-cli
+    url: |
+      https://github.com/AnWeber/asdf-jira-cli.git
+  vscode-snippets-vars:
+    path: ./vscode-snippets-vars
+    url: |
+      https://github.com/AnWeber/vscode-snip.git
+  vsce-website:
+    path: ./httpyac/vsce-website
+    url: |
+      https://github.com/formulahendry/vsce-website.git
+  xmldom-format:
+    path: ./httpyac/xmldom-format
+    url: |
+      https://github.com/AnWeber/xmldom-format
+  filetester:
+    path: ./filetester
+    url: |
+      https://github.com/AnWeber/filetester.git
+  reagraph:
+    path: ./reagraph
+    url: |
+      https://github.com/AnWeber/reagraph.git
+  vscode-mani:
+    path: ./vscode-mani
+    url: |
+      https://github.com/AnWeber/vscode-mani.git
+  lit-inputs:
+    path: ./lit-inputs
+    url: |
+      https://github.com/AnWeber/lit-inputs.git
+  pdf-viewer-element:
+    path: ./pdf-viewer-element
+    url: |
+      https://github.com/justinfagnani/pdf-viewer-element.git
+  asdf-mani:
+    path: ./asdf-mani
+    url: |
+      https://github.com/AnWeber/asdf-mani.git
+    tags:
+      - java
+      - main
+      - icon:archive
+  mani:
+    path: ./mani
+    url: |
+      https://github.com/AnWeber/mani.git
+  lit-hls-mock:
+    path: ./lit-hls-mock
+    url: |
+      https://github.com/AnWeber/lit-hls-mock.git
+  dotfiles:
+    path: ./dotfiles
+    url: |
+      https://github.com/AnWeber/dotfiles.git
+  cli:
+    path: ./cli
+    url: |
+      https://gitlab.com/AnWeber/cli.git
+  swapf:
+    path: ./swapf
+    url: |
+      https://github.com/AnWeber/vscode-swapf.git
