@@ -46,7 +46,6 @@ specs:
   text:
     output: text
     omit_empty: true
-    prefix_colors: ["green", "blue", "red", "yellow", "magenta", "cyan"]
   table:
     output: table
     omit_empty: true

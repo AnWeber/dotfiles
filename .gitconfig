@@ -68,6 +68,8 @@
   pull-all = !bash ~/.dotfiles/git/git-pull-all.sh
   stale = !bash ~/.dotfiles/git/git-stale.sh
   stash-all=stash --include-untracked
+  untrack = update-index --assume-unchanged
+	track = update-index --no-assume-unchanged
   undo = reset HEAD~1 --mixed
   unstage = reset HEAD --
 
