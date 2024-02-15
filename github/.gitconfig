@@ -1,7 +1,7 @@
 [user]
 	name = Andreas Weber
 	email = weber.andreas@gmail.com
-	signingkey = B65E99F4
+	signingkey = E7BA24AB
 
 [gpg]
 	program = /usr/bin/gpg

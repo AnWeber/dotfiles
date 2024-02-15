@@ -48,6 +48,7 @@
   dirty = !bash ~/.dotfiles/git/git-dirty.sh
 	erase = !bash ~/.dotfiles/git/git-erase.sh
   flinch = !bash ~/.dotfiles/git/git-flinch.sh
+	fpush = push --force-with-lease
   jira = !bash ~/.dotfiles/git/git-jira.sh
 	last = checkout @{-1}
   last-diff = "!f() { \
@@ -116,3 +117,10 @@
     plus-style = syntax bluepaint.green
     syntax-theme = ansi
     zero-style = syntax
+[rerere]
+	enabled = true
+	autoUpdate = true
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
