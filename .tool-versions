@@ -10,3 +10,4 @@ jira-cli 1.4.0
 jq 1.6
 mani 0.25.0
 volta 1.1.1
+yq 4.41.1
