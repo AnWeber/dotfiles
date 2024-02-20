@@ -1,23 +1,33 @@
 [user]
   name = Andreas Weber
   email = weber.andreas@gmail.com
+[branch]
+	sort = -committerdate
+[color]
+  ui = auto
+[column]
+	ui = auto
 [core]
   editor = code --wait
   pager = delta
 	excludesFile = ~/.gitignore
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+[merge]
+  conflictstyle = diff3
 [pull]
   rebase = true
 [rebase]
 	autoStash = true
-[merge]
-  conflictstyle = diff3
+[rerere]
+	enabled = true
+	autoUpdate = true
+[interactive]
+    diffFilter = delta --color-only --features=interactive
 
-[includeIf "gitdir:~/github/"]
-    path = ~/github/.gitconfig
-[includeIf "gitdir:~/work/"]
-    path = ~/work/.gitconfig
-[includeIf "~/work.gitconfig"]
-  path = ~/work.gitconfig
 
 [credential "https://github.com"]
   helper = !gh auth git-credential
@@ -28,14 +38,13 @@
 [credential "https://gitlab.com"]
 	helper = !glab auth git-credential
 
-[filter "lfs"]
-  required = true
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
 
-[color]
-  ui = auto
+[includeIf "gitdir:~/github/"]
+    path = ~/github/.gitconfig
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
+[includeIf "~/work.gitconfig"]
+  path = ~/work.gitconfig
 
 [alias]
   behind-origin = "!git rev-list $(git current)..origin/$(git current) --count |  awk -F ""0""  '{ print $1; }'"
@@ -73,9 +82,6 @@
 	track = update-index --no-assume-unchanged
   undo = reset HEAD~1 --mixed
   unstage = reset HEAD --
-
-[interactive]
-    diffFilter = delta --color-only --features=interactive
 
 
 [delta]
@@ -117,10 +123,3 @@
     plus-style = syntax bluepaint.green
     syntax-theme = ansi
     zero-style = syntax
-[rerere]
-	enabled = true
-	autoUpdate = true
-[branch]
-	sort = -committerdate
-[column]
-	ui = auto
