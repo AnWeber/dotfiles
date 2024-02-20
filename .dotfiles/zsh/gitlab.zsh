@@ -1,0 +1,1 @@
+alias ciyml="glab api /projects/:fullpath/ci/lint | yq .merged_yaml"
