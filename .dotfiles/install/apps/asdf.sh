@@ -36,7 +36,15 @@ if grep -q "kubectl" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
 fi
 if grep -q "glab" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "glab install"
+  asdf plugin add glab
 fi
+
+
+if grep -q "yq" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "yq install"
+  asdf plugin add yq
+fi
+
 if grep -q "mitmproxy" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "mitmproxy install"
   asdf plugin add mitmproxy
@@ -52,4 +60,10 @@ if grep -q "golang" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   asdf plugin add golangci-lint https://github.com/hypnoglow/asdf-golangci-lint.git
   asdf plugin add gofumpt
 fi
+
+if grep -q "bat" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "bat install"
+  asdf plugin add bat
+fi
+
 asdf install
