@@ -8,6 +8,7 @@ asdf-golang 1.21.4
 java openjdk-17
 jira-cli 1.4.0
 jq 1.6
+ripgrep 14.1.0
 mani 0.25.0
 volta 1.1.1
 yq 4.41.1

@@ -1,5 +1,2 @@
 #!/usr/bin/env bash
-
-grep -rni -C1 --exclude-dir=node_modules --exclude-dir=dist --exclude-dir=.git --exclude-dir=coverage \
-  --include=\*.{go,ts,js,tsx,json,yml,yaml,md,java,kt}\
-  "$@"
+rg --json "$@" | delta

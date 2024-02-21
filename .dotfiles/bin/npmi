@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-find . -maxdepth 3 -type f -name package.json -not -path '*/node_modules/*' -exec bash -c 'npm install $(dirname {})' \;

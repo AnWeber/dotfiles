@@ -66,4 +66,9 @@ if grep -q "bat" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   asdf plugin add bat
 fi
 
+
+if grep -q "ripgrep" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "bat install"
+  asdf plugin add ripgrep
+fi
 asdf install

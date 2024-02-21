@@ -1,0 +1,12 @@
+
+# Add my 'web' type.
+--type-add=web:*.{html,js,cjs,mjs,jsx,ts,tsx,css,scss}*
+--type-add=package:package.json
+
+--glob=!.git/*
+--glob=!.husky/*
+--glob=!node_modules/*
+--glob=!dist/*
+--glob=!coverage/*
+--glob=!package-lock.json
+--smart-case
