@@ -16,17 +16,19 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
+[interactive]
+    diffFilter = delta --color-only --features=interactive
 [merge]
   conflictstyle = diff3
 [pull]
   rebase = true
+[push]
+	autoSetupRemote = true
 [rebase]
 	autoStash = true
 [rerere]
 	enabled = true
 	autoUpdate = true
-[interactive]
-    diffFilter = delta --color-only --features=interactive
 
 
 [credential "https://github.com"]
