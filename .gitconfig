@@ -49,6 +49,7 @@
   path = ~/work.gitconfig
 
 [alias]
+  ca = commit --amend
   behind-origin = "!git rev-list $(git current)..origin/$(git current) --count |  awk -F ""0""  '{ print $1; }'"
 	branch-clean = !bash ~/.dotfiles/git/git-branch-clean.sh
 	branch-default = !bash ~/.dotfiles/git/git-branch-default.sh
