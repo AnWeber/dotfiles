@@ -39,8 +39,7 @@ projects:
       - httpyac
   httpyac:
     path: ./httpyac/httpyac
-    url: |
-      https://github.com/AnWeber/httpyac.git
+    url: https://github.com/AnWeber/httpyac.git
     tags:
       - httpyac
   httpyac.github.io:
@@ -82,88 +81,58 @@ projects:
       - vscode
   asdf-kafkactl:
     path: ./asdf-kafkactl
-    url: |
-      https://github.com/AnWeber/asdf-kafkactl.git
+    url: https://github.com/AnWeber/asdf-kafkactl.git
     tags: []
   lit-pdf:
     path: ./lit-pdf
-    url: |
-      https://github.com/AnWeber/lit-pdf.git
+    url: https://github.com/AnWeber/lit-pdf.git
     tags: []
   asdf-jira-cli:
     path: ./asdf-jira-cli
-    url: |
-      https://github.com/AnWeber/asdf-jira-cli.git
+    url: https://github.com/AnWeber/asdf-jira-cli.git
   vscode-snippets-vars:
     path: ./vscode-snippets-vars
-    url: |
-      https://github.com/AnWeber/vscode-snip.git
+    url: https://github.com/AnWeber/vscode-snip.git
     tags:
       - vscode
-  vsce-website:
-    path: ./httpyac/vsce-website
-    url: |
-      https://github.com/formulahendry/vsce-website.git
   xmldom-format:
     path: ./httpyac/xmldom-format
-    url: |
-      https://github.com/AnWeber/xmldom-format
-    tags: []
-  filetester:
-    path: ./filetester
-    url: |
-      https://github.com/AnWeber/filetester.git
-  reagraph:
-    path: ./reagraph
-    url: |
-      https://github.com/AnWeber/reagraph.git
+    url: https://github.com/AnWeber/xmldom-format
     tags: []
   vscode-mani:
     path: ./vscode-mani
-    url: |
-      https://github.com/AnWeber/vscode-mani.git
+    url: https://github.com/AnWeber/vscode-mani.git
     tags:
       - vscode
   lit-inputs:
     path: ./lit-inputs
-    url: |
-      https://github.com/AnWeber/lit-inputs.git
+    url: https://github.com/AnWeber/lit-inputs.git
     tags: []
-  pdf-viewer-element:
-    path: ./pdf-viewer-element
-    url: |
-      https://github.com/justinfagnani/pdf-viewer-element.git
   asdf-mani:
     path: ./asdf-mani
-    url: |
-      https://github.com/AnWeber/asdf-mani.git
+    url: https://github.com/AnWeber/asdf-mani.git
     tags:
       - java
       - main
   mani:
     path: ./mani
-    url: |
-      https://github.com/AnWeber/mani.git
+    url: https://github.com/AnWeber/mani.git
   lit-hls-mock:
     path: ./lit-hls-mock
-    url: |
-      https://github.com/AnWeber/lit-hls-mock.git
+    url: https://github.com/AnWeber/lit-hls-mock.git
     tags: []
   dotfiles:
     path: ./dotfiles
-    url: |
-      https://github.com/AnWeber/dotfiles.git
+    url: https://github.com/AnWeber/dotfiles.git
     tags:
       - main
   cli:
     path: ./cli
-    url: |
-      https://gitlab.com/AnWeber/cli.git
+    url: https://gitlab.com/AnWeber/cli.git
     tags:
       - java
   swapf:
     path: ./swapf
-    url: |
-      https://github.com/AnWeber/vscode-swapf.git
+    url: https://github.com/AnWeber/vscode-swapf.git
     tags:
       - vscode
