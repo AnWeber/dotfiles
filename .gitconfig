@@ -2,15 +2,15 @@
   name = Andreas Weber
   email = weber.andreas@gmail.com
 [branch]
-	sort = -committerdate
+  sort = -committerdate
 [color]
   ui = auto
 [column]
-	ui = auto
+  ui = auto
 [core]
   editor = code --wait
   pager = delta
-	excludesFile = ~/.gitignore
+  excludesFile = ~/.gitignore
 [filter "lfs"]
   required = true
   clean = git-lfs clean -- %f
@@ -23,12 +23,12 @@
 [pull]
   rebase = true
 [push]
-	autoSetupRemote = true
+  autoSetupRemote = true
 [rebase]
-	autoStash = true
+  autoStash = true
 [rerere]
-	enabled = true
-	autoUpdate = true
+  enabled = true
+  autoUpdate = true
 
 
 [credential "https://github.com"]
@@ -38,7 +38,7 @@
   helper = !gh auth git-credential
 
 [credential "https://gitlab.com"]
-	helper = !glab auth git-credential
+  helper = !glab auth git-credential
 
 
 [includeIf "gitdir:~/github/"]
@@ -51,18 +51,18 @@
 [alias]
   ca = commit --amend
   behind-origin = "!git rev-list $(git current)..origin/$(git current) --count |  awk -F ""0""  '{ print $1; }'"
-	branch-clean = !bash ~/.dotfiles/git/git-branch-clean.sh
-	branch-default = !bash ~/.dotfiles/git/git-branch-default.sh
-	bv = !bash ~/.dotfiles/git/git-branch-view.sh
+  branch-clean = !bash ~/.dotfiles/git/git-branch-clean.sh
+  branch-default = !bash ~/.dotfiles/git/git-branch-default.sh
+  bv = !bash ~/.dotfiles/git/git-branch-view.sh
   current = rev-parse --abbrev-ref HEAD
   dead = "!git branch -vv | grep ': gone]'|  grep -v '\\*'  | awk '{ print $1; }'"
   dev = !bash ~/.dotfiles/git/git-dev.sh
   dirty = !bash ~/.dotfiles/git/git-dirty.sh
-	erase = !bash ~/.dotfiles/git/git-erase.sh
+  erase = !bash ~/.dotfiles/git/git-erase.sh
   flinch = !bash ~/.dotfiles/git/git-flinch.sh
-	fpush = push --force-with-lease
+  fpush = push --force-with-lease
   jira = !bash ~/.dotfiles/git/git-jira.sh
-	last = checkout @{-1}
+  last = checkout @{-1}
   last-diff = "!f() { \
             project_root_dir=$(git rev-parse --show-toplevel); \
             echo finding full file path of $1 in $project_root_dir; \
@@ -76,13 +76,14 @@
   ls = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate -l
   current-tag = !bash ~/.dotfiles/git/git-tag-current.sh
   my = !bash ~/.dotfiles/git/git-my.sh
+  mergelast = merge @{-1}
   open = !bash ~/.dotfiles/git/git-open.sh
-	re = !git rebase -i `git merge-base HEAD master`
+  re = !git rebase -i `git merge-base HEAD master`
   pull-all = !bash ~/.dotfiles/git/git-pull-all.sh
   stale = !bash ~/.dotfiles/git/git-stale.sh
   stash-all=stash --include-untracked
   untrack = update-index --assume-unchanged
-	track = update-index --no-assume-unchanged
+  track = update-index --no-assume-unchanged
   undo = reset HEAD~1 --mixed
   unstage = reset HEAD --
 
