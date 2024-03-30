@@ -49,20 +49,37 @@
   path = ~/work.gitconfig
 
 [alias]
+  # commit ammend
   ca = commit --amend
+  # output commits behind origin
   behind-origin = "!git rev-list $(git current)..origin/$(git current) --count |  awk -F ""0""  '{ print $1; }'"
   branch-clean = !bash ~/.dotfiles/git/git-branch-clean.sh
+  # get default branch name
   branch-default = !bash ~/.dotfiles/git/git-branch-default.sh
-  bv = !bash ~/.dotfiles/git/git-branch-view.sh
+  # branch view with last commit
+  bv =  branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate -l
+  # output current branch name
   current = rev-parse --abbrev-ref HEAD
+  # get all branches not on remote
   dead = "!git branch -vv | grep ': gone]'|  grep -v '\\*'  | awk '{ print $1; }'"
+  # switch to dev branch
   dev = !bash ~/.dotfiles/git/git-dev.sh
+  # get diff to last branch
+  delta = "!git diff ""$(git name-rev @{-1} --name-only)"""
+  # output dirty state
   dirty = !bash ~/.dotfiles/git/git-dirty.sh
+  # delete local and remote branch
   erase = !bash ~/.dotfiles/git/git-erase.sh
   flinch = !bash ~/.dotfiles/git/git-flinch.sh
+  # push force lease
   fpush = push --force-with-lease
+  # get jira ticket name of current branch
   jira = !bash ~/.dotfiles/git/git-jira.sh
+  # switch to last branch
   last = checkout @{-1}
+  # switch to last last branch
+  laast = checkout @{-2}
+  # diff of last commit
   last-diff = "!f() { \
             project_root_dir=$(git rev-parse --show-toplevel); \
             echo finding full file path of $1 in $project_root_dir; \
@@ -70,21 +87,33 @@
             echo full file path $filepath; \
             last_modified_commit_hash=$(git rev-list -1 HEAD $filepath); \
             echo last commit file modified $last_modified_commit_hash; \
-            git difftool $last_modified_commit_hash^ $filepath; \
+            git diff $last_modified_commit_hash^ $filepath; \
        }; f"
+  # view log message of last commits
   lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
-  ls = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate -l
+  # output current tag
   current-tag = !bash ~/.dotfiles/git/git-tag-current.sh
   my = !bash ~/.dotfiles/git/git-my.sh
+  # merge last branch in current branch
   mergelast = merge @{-1}
+  # open current branch in github/gitlab
   open = !bash ~/.dotfiles/git/git-open.sh
   re = !git rebase -i `git merge-base HEAD master`
+  # pull all branches
   pull-all = !bash ~/.dotfiles/git/git-pull-all.sh
+  # output stale branches
   stale = !bash ~/.dotfiles/git/git-stale.sh
+  # author summary for current repo
+  summary = !bash ~/.dotfiles/git/git-summary.sh
+  # stash all changes
   stash-all=stash --include-untracked
+  # ignore changes in file
   untrack = update-index --assume-unchanged
+  # track changes in file
   track = update-index --no-assume-unchanged
+  # reset last commit
   undo = reset HEAD~1 --mixed
+  # unstage all changes
   unstage = reset HEAD --
 
 
