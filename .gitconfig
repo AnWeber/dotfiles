@@ -70,6 +70,9 @@
   dirty = !bash ~/.dotfiles/git/git-dirty.sh
   # delete local and remote branch
   erase = !bash ~/.dotfiles/git/git-erase.sh
+
+  # fresh
+  fresh = !bash ~/.dotfiles/git/git-fresh.sh
   flinch = !bash ~/.dotfiles/git/git-flinch.sh
   # push force lease
   fpush = push --force-with-lease

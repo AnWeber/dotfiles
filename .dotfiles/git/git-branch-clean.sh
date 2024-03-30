@@ -7,7 +7,7 @@ while [[ "$#" -gt 0 ]]; do
 done
 git fetch -p
 
-
+git branch --merged | grep -i -v -E "master|main|dev|develop|development|head|HEAD"| xargs git branch -d
 if ! [ -z "$force" ]; then
   git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r git branch -D
 else
