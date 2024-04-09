@@ -10,6 +10,3 @@ if  (($asdfPlugins[(Ie)kubectl])); then
   fi
 fi
 
-
-alias helm_prune='helm ls --all --short | xargs -L1 helm delete'
-alias kube_prune='kubectl delete replicasets,services,deployments,jobs,pods --all'

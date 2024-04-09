@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+while [ : ]; do
+  case "$1" in
+    --force)
+        useForce=1
+        shift
+        ;;
+    *) break;;
+  esac
+done
+
+prune(){
+    echo "prune ${k8context}"
+    if [ -z ${useForce+x} ]; then
+        kubectl delete replicasets,services,deployments,jobs,pods --all
+    else
+        kubectl delete replicasets,services,deployments,jobs,pods --all --force
+    fi
+}
+
+k8context=$(kubectl config current-context)
+read -r -p "Are you sure you want to delete ${k8context}? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+        prune
+        ;;
+    *)
+        echo "prune aborted"
+        ;;
+esac
