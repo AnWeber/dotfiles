@@ -4,7 +4,6 @@ source ~/.dotfiles/zsh/dotfiles.zsh
 source ~/.dotfiles/zsh/git.zsh
 source ~/.dotfiles/zsh/gitlab.zsh
 source ~/.dotfiles/zsh/java.zsh
-source ~/.dotfiles/zsh/jira.zsh
 source ~/.dotfiles/zsh/kubectl.zsh
 source ~/.dotfiles/zsh/p10k.zsh
 source ~/.dotfiles/zsh/proxy.zsh

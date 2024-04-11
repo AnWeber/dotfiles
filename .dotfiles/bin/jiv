@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+jiraTicket=$1
+if [ -z $1 ];then
+  jiraTicket=$(git jira)
+fi
+jira issue view "${jiraTicket}" | bat
