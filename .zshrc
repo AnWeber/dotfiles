@@ -12,8 +12,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#1e88e5"
 
 plugins=(
   autoupdate
-  common-aliases
-  git
   gpg-agent
   z
   zsh-autosuggestions
@@ -29,12 +27,14 @@ done
 
 export PATH="$HOME/.local/bin:$HOME/.dotfiles/bin:$PATH"
 
-[[ ! -f ~/.dotfiles/zsh/default.zsh ]] || source ~/.dotfiles/zsh/default.zsh
-[[ ! -f ~/${LOCALENV}.zsh ]] || source ~/${LOCALENV}.zsh
+
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 setopt globdots
+
+[[ ! -f ~/.dotfiles/zsh/index.zsh ]] || source ~/.dotfiles/zsh/index.zsh
+[[ ! -f ~/${LOCALENV}.zsh ]] || source ~/${LOCALENV}.zsh
 
 export GPG_TTY=$(tty)
 export VOLTA_HOME="$HOME/.volta"

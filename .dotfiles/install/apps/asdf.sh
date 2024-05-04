@@ -71,10 +71,22 @@ if grep -q "ripgrep" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "bat install"
   asdf plugin add ripgrep
 fi
+
 if grep -q "neovim" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "neovim install"
   asdf plugin add neovim
 fi
 
 
+if grep -q "eza" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "eza install"
+  asdf plugin add eza https://github.com/lwiechec/asdf-eza
+fi
+
+if grep -q "fzf" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "fzf install"
+  asdf plugin add fzf https://github.com/kompiro/asdf-fzf.git
+fi
+
 asdf install
+
