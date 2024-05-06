@@ -1,5 +1,5 @@
 
-allBranches=(main development master)
+allBranches=(main development develop master)
 
 for branch in ${allBranches[@]}; do
   if git rev-parse --quiet --verify $branch &> /dev/null; then

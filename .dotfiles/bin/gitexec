@@ -4,6 +4,10 @@ tag="main"
 
 while [ : ]; do
   case "$1" in
+    --no-color)
+      color="--no-color"
+      shift
+      ;;
     --tag)
         tag=$2
         shift
@@ -30,10 +34,12 @@ do
   fi
 done
 
-echo $args
+if [[ -z $color ]]; then
+  echo $args
+fi
 if [[ $tag == "all" ]]; then
-  mani exec --silent --omit-empty --all -- "$args"
+  mani exec ${color} --silent --omit-empty --all -- "$args"
 else
-  mani exec --silent --omit-empty --tags $tag -- "$args"
+  mani exec ${color} --silent --omit-empty --tags $tag -- "$args"
 fi
 
