@@ -1,3 +1,4 @@
+source ~/.dotfiles/zsh/alias.zsh
 source ~/.dotfiles/zsh/asdf.zsh
 source ~/.dotfiles/zsh/docker.zsh
 source ~/.dotfiles/zsh/dotfiles.zsh
