@@ -13,3 +13,4 @@ neovim stable
 ripgrep 14.1.0
 volta 1.1.1
 yq 4.43.1
+zoxide 0.9.4

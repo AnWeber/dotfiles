@@ -13,7 +13,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#1e88e5"
 plugins=(
   autoupdate
   gpg-agent
-  z
+  zoxide
   zsh-autosuggestions
   zsh-better-npm-completion
 )

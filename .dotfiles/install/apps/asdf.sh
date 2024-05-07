@@ -87,6 +87,11 @@ if grep -q "fzf" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "fzf install"
   asdf plugin add fzf https://github.com/kompiro/asdf-fzf.git
 fi
+if grep -q "zoxide" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "zoxide install"
+  asdf plugin add zoxide https://github.com/nyrst/asdf-zoxide.git
+fi
+
 
 asdf install
 
