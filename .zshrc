@@ -27,7 +27,7 @@ done
 
 export PATH="$HOME/.local/bin:$HOME/.dotfiles/bin:$PATH"
 
-
+source $HOME/.asdf/asdf.sh
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
