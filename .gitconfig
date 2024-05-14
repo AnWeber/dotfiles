@@ -101,7 +101,10 @@
   mergelast = merge @{-1}
   # open current branch in github/gitlab
   open = !bash ~/.dotfiles/git/git-open.sh
-  re = !git rebase -i `git merge-base HEAD master`
+  # rebase with HEAD
+  re = !git rebase -i `git merge-base HEAD main`
+  # run script if on branch
+  run = !bash ~/.dotfiles/git/git-run.sh
   # pull all branches
   pull-all = !bash ~/.dotfiles/git/git-pull-all.sh
   # output stale branches
