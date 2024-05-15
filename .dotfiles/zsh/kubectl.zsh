@@ -10,3 +10,5 @@ if  (($asdfPlugins[(Ie)kubectl])); then
   fi
 fi
 
+
+alias k="kubectl"
