@@ -50,7 +50,7 @@
 
 [alias]
   # commit ammend
-  ca = commit --amend
+  ca = "!git add . && git commit --all --amend --no-edit"
   # output commits behind origin
   behind-origin = "!git rev-list $(git current)..origin/$(git current) --count |  awk -F ""0""  '{ print $1; }'"
   branch-clean = !bash ~/.dotfiles/git/git-branch-clean.sh

@@ -13,10 +13,12 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#1e88e5"
 plugins=(
   autoupdate
   gpg-agent
+  volta
   zoxide
   zsh-autosuggestions
   zsh-better-npm-completion
 )
+zstyle ':omz:plugins:eza' 'git-status' yes
 
 xbindkeys -f ~/.xbindkeysrc
 
