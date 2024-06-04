@@ -40,6 +40,8 @@
 [credential "https://gitlab.com"]
   helper = !glab auth git-credential
 
+[init]
+	defaultBranch = main
 
 [includeIf "gitdir:~/github/"]
     path = ~/github/.gitconfig
