@@ -39,6 +39,11 @@ if grep -q "glab" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   asdf plugin add glab
 fi
 
+if grep -q "starship" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "starship install"
+  asdf plugin add starship
+fi
+
 
 if grep -q "yq" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "yq install"

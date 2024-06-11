@@ -1,0 +1,52 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """$directory$character"""
+
+# move the rest of the prompt to the right
+right_format = """$all"""
+
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "yellow"
+
+[directory]
+repo_root_style = "blue bold"
+style = "blue"
+truncate_to_repo = false
+read_only = ""
+truncation_length = 5
+
+[git_branch]
+format = "[$branch]($style)"
+style = "13 bold"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](13) ($ahead_behind$stashed)]($style)"
+style = "13"
+stashed = "\\$"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[golang]
+disabled = true
+
+[kubernetes]
+disabled = false
+
+[nodejs]
+disabled = true
+
+[package]
+format = "[$symbol$version]($style) "
+symbol = ""
+style = "002"
+
+[status]
+disabled = false
+symbol = "⚡"
+signal_symbol = "⚡"
+not_executable_symbol = "⚡"

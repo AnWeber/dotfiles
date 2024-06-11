@@ -11,6 +11,7 @@ jq 1.7.1
 mani 0.25.0
 neovim stable
 ripgrep 14.1.0
+starship 1.19.0
 volta 1.1.1
 yq 4.43.1
 zoxide 0.9.4

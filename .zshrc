@@ -1,9 +1,4 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_CUSTOM_AUTOUPDATE_QUIET=true
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 7
@@ -34,6 +29,11 @@ source $HOME/.asdf/asdf.sh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 setopt globdots
+
+
+export STARSHIP_CONFIG=~/.dotfiles/zsh/starship.toml
+eval "$(starship init zsh)"
+alias starhship_refresh="$(eval "$(starship init zsh)")"
 
 [[ ! -f ~/.dotfiles/zsh/index.zsh ]] || source ~/.dotfiles/zsh/index.zsh
 [[ ! -f ~/${LOCALENV}.zsh ]] || source ~/${LOCALENV}.zsh
