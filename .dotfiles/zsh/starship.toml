@@ -6,7 +6,6 @@ format = """$directory$character"""
 # move the rest of the prompt to the right
 right_format = """$all"""
 
-
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
@@ -50,3 +49,12 @@ disabled = false
 symbol = "⚡"
 signal_symbol = "⚡"
 not_executable_symbol = "⚡"
+
+
+[custom.git_tag]
+command = "git tag --sort=-version:refname | head -n 1"
+detect_files = [
+  '.gitignore',
+] # can specify filters but wildcards are not supported
+format = '[$output]($style)'
+style = "3"
