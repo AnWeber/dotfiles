@@ -7,4 +7,5 @@ source ~/.dotfiles/zsh/gitlab.zsh
 source ~/.dotfiles/zsh/java.zsh
 source ~/.dotfiles/zsh/kubectl.zsh
 source ~/.dotfiles/zsh/proxy.zsh
+source ~/.dotfiles/zsh/p10k.zsh
 source ~/.dotfiles/zsh/lscolors.zsh

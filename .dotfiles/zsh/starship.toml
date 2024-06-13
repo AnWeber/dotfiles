@@ -1,47 +1,150 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """$directory$character"""
-
+format = """$directory$git_branch$git_status$line_break$character"""
 # move the rest of the prompt to the right
-right_format = """$all"""
+right_format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$package\
+$kubernetes\
+$singularity\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$git_commit\
+$git_state\
+$git_metrics\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$direnv\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell"""
 
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
 
 [directory]
+format = "[$path]($style)[$read_only]($read_only_style)"
 repo_root_style = "blue bold"
 style = "blue"
 truncate_to_repo = false
-read_only = ""
 truncation_length = 5
 
 [git_branch]
-format = "[$branch]($style)"
+format = "\\([$branch]($style)"
 style = "13 bold"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](13) ($ahead_behind$stashed)]($style)"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](13)($ahead_behind$stashed)]($style)\\)"
 style = "13"
-stashed = "\\$"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "bright-black"
 
+[gradle]
+disabled = true
+
+[java]
+format = "[${symbol}(${version})]($style) "
+version_format = "${major}"
+style = "47"
+symbol = ""
+
 [golang]
+format = "[${symbol}(bold)(${version})]($style) "
+version_format = "$major.$minor"
+style = "47"
+symbol = ""
+
+[kotlin]
 disabled = true
 
 [kubernetes]
 disabled = false
+format = '[$context]($style) '
+style = "bright-yellow"
 
 [nodejs]
-disabled = true
+format = "[${symbol}(${version})]($style) "
+version_format = "${raw}"
+symbol = " "
 
 [package]
 format = "[$symbol$version]($style) "
-symbol = ""
+symbol = " "
 style = "002"
 
 [status]
@@ -49,12 +152,3 @@ disabled = false
 symbol = "⚡"
 signal_symbol = "⚡"
 not_executable_symbol = "⚡"
-
-
-[custom.git_tag]
-command = "git tag --sort=-version:refname | head -n 1"
-detect_files = [
-  '.gitignore',
-] # can specify filters but wildcards are not supported
-format = '[$output]($style)'
-style = "3"
