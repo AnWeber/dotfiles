@@ -33,10 +33,9 @@
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     # os_icon               # os identifier
-    dir                     # current directory
-    vcs                     # git status
     # =========================[ Line #2 ]=========================
-    newline                 # \n
+   #  newline     # \n
+    dir  # current directory
     prompt_char             # prompt symbol
   )
 
@@ -50,6 +49,7 @@
     command_execution_time  # duration of the last command
     background_jobs         # presence of background jobs
     direnv                  # direnv status (https://direnv.net/)
+    vcs                     # git status
     kubecontext             # current kubernetes context (https://kubernetes.io/)
     asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
     # virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
@@ -145,7 +145,7 @@
   typeset -g POWERLEVEL9K_ICON_BEFORE_CONTENT=true
 
   # Add an empty line before each prompt.
-  typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+  typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
 
   # Connect left prompt lines with these symbols.
   typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=
@@ -272,7 +272,7 @@
   # directory will be shortened only when prompt doesn't fit or when other parameters demand it
   # (see POWERLEVEL9K_DIR_MIN_COMMAND_COLUMNS and POWERLEVEL9K_DIR_MIN_COMMAND_COLUMNS_PCT below).
   # If set to `0`, directory will always be shortened to its minimum length.
-  typeset -g POWERLEVEL9K_DIR_MAX_LENGTH=80
+  typeset -g POWERLEVEL9K_DIR_MAX_LENGTH=50
   # When `dir` segment is on the last prompt line, try to shorten it enough to leave at least this
   # many columns for typing commands.
   typeset -g POWERLEVEL9K_DIR_MIN_COMMAND_COLUMNS=40
