@@ -1,138 +1,162 @@
+---
 import:
   - ~/.dotfiles/settings/mani.yaml
 projects:
-  bluepaint:
-    url: https://github.com/AnWeber/bluepaint.git
-    tags:
-      - vscode
-      - main
-  dockerfiles:
-    url: https://github.com/AnWeber/dockerfiles.git
-  dot-icons:
-    url: https://github.com/AnWeber/dot-icons.git
-    tags:
-      - vscode
-      - main
-  hookpoint:
-    path: httpyac/hookpoint
-    url: https://github.com/AnWeber/hookpoint.git
-    tags:
-      - main
-      - httpyac
-  httpbook:
-    path: httpyac/httpbook
-    url: https://github.com/AnWeber/httpbook.git
-    tags:
-      - main
-      - httpyac
-  httpbook-grid:
-    path: httpyac/httpbook-grid
-    url: https://github.com/AnWeber/httpbook-grid.git
-    tags:
-      - main
-      - httpyac
-  httpbook-monacorenderer:
-    path: httpyac/httpbook-monacorenderer
-    url: https://github.com/AnWeber/httpbook-monacorenderer.git
-    tags:
-      - main
-      - httpyac
-  httpyac:
-    path: ./httpyac/httpyac
-    url: https://github.com/AnWeber/httpyac.git
-    tags:
-      - httpyac
-  httpyac.github.io:
-    path: httpyac/httpyac.github.io
-    url: https://github.com/httpyac/httpyac.github.io.git
-    tags:
-      - httpyac
-      - main
-  mapstruct-springlazy:
-    url: https://github.com/AnWeber/mapstruct-springlazy.git
-    tags:
-      - main
-      - java
-  reveal-button:
-    url: https://github.com/AnWeber/reveal-button.git
-    tags:
-      - main
-      - vscode
-  sessionLogger:
-    url: https://github.com/AnWeber/sessionLogger.git
-    tags:
-      - java
-  vscode-gitbuttons:
-    url: https://github.com/AnWeber/vscode-gitbuttons.git
-    tags:
-      - main
-      - vscode
-  vscode-statusbar-command:
-    url: https://github.com/AnWeber/vscode-statusbar-command.git
-    tags:
-      - vscode
-  vue-cli-plugin-compression:
-    url: https://github.com/AnWeber/vue-cli-plugin-compression.git
-    tags:
-      - vscode
-  vscode-timewarrior:
-    url: https://github.com/AnWeber/vscode-timewarrior.git
-    tags:
-      - vscode
-  asdf-kafkactl:
-    path: ./asdf-kafkactl
-    url: https://github.com/AnWeber/asdf-kafkactl.git
-    tags: []
-  lit-pdf:
-    path: ./lit-pdf
-    url: https://github.com/AnWeber/lit-pdf.git
-    tags: []
   asdf-jira-cli:
     path: ./asdf-jira-cli
     url: https://github.com/AnWeber/asdf-jira-cli.git
-  vscode-snippets-vars:
-    path: ./vscode-snippets-vars
-    url: https://github.com/AnWeber/vscode-snip.git
-    tags:
-      - vscode
-  xmldom-format:
-    path: ./httpyac/xmldom-format
-    url: https://github.com/AnWeber/xmldom-format
+  asdf-kafkactl:
+    path: ./asdf-kafkactl
     tags: []
-  vscode-mani:
-    path: ./vscode-mani
-    url: https://github.com/AnWeber/vscode-mani.git
-    tags:
-      - vscode
-  lit-inputs:
-    path: ./lit-inputs
-    url: https://github.com/AnWeber/lit-inputs.git
-    tags: []
+    url: https://github.com/AnWeber/asdf-kafkactl.git
   asdf-mani:
     path: ./asdf-mani
+    tags:
+      - java
+      - main
     url: https://github.com/AnWeber/asdf-mani.git
-    tags:
-      - java
-      - main
-  mani:
-    path: ./mani
-    url: https://github.com/AnWeber/mani.git
-  lit-hls-mock:
-    path: ./lit-hls-mock
-    url: https://github.com/AnWeber/lit-hls-mock.git
-    tags: []
-  dotfiles:
-    path: ./dotfiles
-    url: https://github.com/AnWeber/dotfiles.git
-    tags:
-      - main
-  cli:
-    path: ./cli
-    url: https://gitlab.com/AnWeber/cli.git
-    tags:
-      - java
-  swapf:
-    path: ./swapf
-    url: https://github.com/AnWeber/vscode-swapf.git
+  bluepaint:
     tags:
       - vscode
+      - main
+    url: https://github.com/AnWeber/bluepaint.git
+  cli:
+    path: ./cli
+    tags:
+      - java
+    url: https://gitlab.com/AnWeber/cli.git
+  dockerfiles:
+    url: https://github.com/AnWeber/dockerfiles.git
+  dot-icons:
+    tags:
+      - vscode
+      - main
+    url: https://github.com/AnWeber/dot-icons.git
+  dotfiles:
+    path: ./dotfiles
+    tags:
+      - main
+    url: https://github.com/AnWeber/dotfiles.git
+  hookpoint:
+    path: httpyac/hookpoint
+    tags:
+      - main
+      - httpyac
+    url: https://github.com/AnWeber/hookpoint.git
+  httpbook:
+    path: httpyac/httpbook
+    tags:
+      - main
+      - httpyac
+    url: https://github.com/AnWeber/httpbook.git
+  httpbook-grid:
+    path: httpyac/httpbook-grid
+    tags:
+      - main
+      - httpyac
+    url: https://github.com/AnWeber/httpbook-grid.git
+  httpbook-monacorenderer:
+    path: httpyac/httpbook-monacorenderer
+    tags:
+      - main
+      - httpyac
+    url: https://github.com/AnWeber/httpbook-monacorenderer.git
+  httpyac:
+    path: ./httpyac/vscode-httpyac/node_modules/httpyac
+    url: |
+      https://github.com/AnWeber/httpyac.git
+  httpyac.github.io:
+    path: httpyac/httpyac.github.io
+    tags:
+      - httpyac
+      - main
+    url: https://github.com/httpyac/httpyac.github.io.git
+  junit-tester:
+    path: ./junit-tester
+    url: |
+      https://github.com/AnWeber/junit-tester.git
+  lit-hls-mock:
+    path: ./lit-hls-mock
+    tags: []
+    url: https://github.com/AnWeber/lit-hls-mock.git
+  lit-inputs:
+    path: ./lit-inputs
+    tags: []
+    url: https://github.com/AnWeber/lit-inputs.git
+  lit-maplibre:
+    path: ./lit-maplibre
+    url: |
+      https://github.com/AnWeber/lit-maplibre.git
+  lit-mediaplayer-intercept:
+    path: ./lit-mediaplayer-intercept
+    url: |
+      https://github.com/AnWeber/lit-mediaplayer-intercept.git
+  lit-pdf:
+    path: ./lit-pdf
+    tags: []
+    url: https://github.com/AnWeber/lit-pdf.git
+  node-httpyac:
+    path: ./httpyac/node-httpyac
+    url: |
+      https://github.com/AnWeber/node-httpyac.git
+  reveal-button:
+    tags:
+      - main
+      - vscode
+    url: https://github.com/AnWeber/reveal-button.git
+  sessionLogger:
+    tags:
+      - java
+    url: https://github.com/AnWeber/sessionLogger.git
+  swapf:
+    path: ./swapf
+    tags:
+      - vscode
+    url: https://github.com/AnWeber/vscode-swapf.git
+  vfox:
+    path: ./vfox
+    url: |
+      https://github.com/AnWeber/vfox.git
+  vfox-mani:
+    path: ./vfox-mani
+    url: |
+      https://github.com/AnWeber/vfox-mani.git
+  vscode-gitbuttons:
+    tags:
+      - main
+      - vscode
+    url: https://github.com/AnWeber/vscode-gitbuttons.git
+  vscode-httpyac:
+    path: ./httpyac/vscode-httpyac
+    url: |
+      https://github.com/AnWeber/vscode-httpyac.git
+  vscode-mani:
+    path: ./vscode-mani
+    tags:
+      - vscode
+    url: https://github.com/AnWeber/vscode-mani.git
+  vscode-snippets-vars:
+    path: ./vscode-snippets-vars
+    tags:
+      - vscode
+    url: https://github.com/AnWeber/vscode-snip.git
+  vscode-statusbar-command:
+    tags:
+      - vscode
+    url: https://github.com/AnWeber/vscode-statusbar-command.git
+  vscode-timewarrior:
+    tags:
+      - vscode
+    url: https://github.com/AnWeber/vscode-timewarrior.git
+  vue-cli-plugin-compression:
+    tags:
+      - vscode
+    url: https://github.com/AnWeber/vue-cli-plugin-compression.git
+  xfilter-hx:
+    path: ./xfilter-hx
+    url: |
+      https://github.com/AnWeber/xfilter-hx.git
+  xmldom-format:
+    path: ./httpyac/xmldom-format
+    tags: []
+    url: https://github.com/AnWeber/xmldom-format
