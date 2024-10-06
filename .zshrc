@@ -49,3 +49,4 @@ export GPG_TTY=$(tty)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export RIPGREP_CONFIG_PATH="$HOME/.dotfiles/settings/.ripgreprc"
+

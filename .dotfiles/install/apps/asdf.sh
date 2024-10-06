@@ -17,6 +17,10 @@ if grep -q "jira-cli" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   asdf plugin add jira-cli https://github.com/anweber/asdf-jira-cli.git
 fi
 
+if grep -q "bat" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "volta install"
+  asdf plugin add bat https://gitlab.com/wt0f/asdf-bat.git
+fi
 
 if grep -q "volta" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "volta install"
@@ -38,12 +42,6 @@ if grep -q "glab" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "glab install"
   asdf plugin add glab
 fi
-
-if grep -q "starship" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
-  echo "starship install"
-  asdf plugin add starship
-fi
-
 
 if grep -q "yq" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "yq install"

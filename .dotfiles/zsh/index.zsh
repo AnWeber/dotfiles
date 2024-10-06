@@ -2,6 +2,7 @@ source ~/.dotfiles/zsh/alias.zsh
 source ~/.dotfiles/zsh/asdf.zsh
 source ~/.dotfiles/zsh/docker.zsh
 source ~/.dotfiles/zsh/dotfiles.zsh
+source ~/.dotfiles/zsh/fzf.zsh
 source ~/.dotfiles/zsh/git.zsh
 source ~/.dotfiles/zsh/gitlab.zsh
 source ~/.dotfiles/zsh/java.zsh
