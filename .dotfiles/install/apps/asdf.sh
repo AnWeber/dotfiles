@@ -85,7 +85,10 @@ if grep -q "eza" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "eza install"
   asdf plugin add eza https://github.com/lwiechec/asdf-eza
 fi
-
+if grep -q "fd" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "fd install"
+  asdf plugin add fd https://gitlab.com/wt0f/asdf-fd.git
+fi
 if grep -q "fzf" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "fzf install"
   asdf plugin add fzf https://github.com/kompiro/asdf-fzf.git
