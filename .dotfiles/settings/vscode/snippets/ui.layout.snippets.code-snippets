@@ -1,0 +1,121 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"2px": {
+		"scope": "scss",
+		"prefix": "_space_yellow",
+		"body": [
+			"utilities.\\$rs-space--yellow"
+		],
+		"description": "2px"
+	},
+	"8px": {
+		"scope": "scss",
+		"prefix": "_space_green",
+		"body": [
+			"utilities.\\$rs-space--green"
+		],
+		"description": "8px"
+	},
+	"12px": {
+		"scope": "scss",
+		"prefix": "_space_orange",
+		"body": [
+			"utilities.\\$rs-space--orange"
+		],
+		"description": "12px"
+	},
+	"16px": {
+		"scope": "scss",
+		"prefix": "_space_pink",
+		"body": [
+			"utilities.\\$rs-space--pink"
+		],
+		"description": "16px"
+	},
+	"20px": {
+		"scope": "scss",
+		"prefix": "_space_purple",
+		"body": [
+			"utilities.\\$rs-space--purple"
+		],
+		"description": "20px"
+	},
+	"24px": {
+		"scope": "scss",
+		"prefix": "_space_blue",
+		"body": [
+			"utilities.\\$rs-space--blue"
+		],
+		"description": "24px"
+	},
+	"28px": {
+		"scope": "scss",
+		"prefix": "_space_marine",
+		"body": [
+			"utilities.\\$rs-space--marine"
+		],
+		"description": "28px"
+	},
+	"32px": {
+		"scope": "scss",
+		"prefix": "_space_grey",
+		"body": [
+			"utilities.\\$rs-space--grey"
+		],
+		"description": "32px"
+	},
+	"36px": {
+		"scope": "scss",
+		"prefix": "_space_bluegreen",
+		"body": [
+			"utilities.\\$rs-space--bluegreen"
+		],
+		"description": "36px"
+	},
+	"40px": {
+		"scope": "scss",
+		"prefix": "_space_darkviolet",
+		"body": [
+			"utilities.\\$rs-space--darkviolet"
+		],
+		"description": "40px"
+	},
+	"44px": {
+		"scope": "scss",
+		"prefix": "_space_brownred",
+		"body": [
+			"utilities.\\$rs-space--brownred"
+		],
+		"description": "44px"
+	},
+	"48px": {
+		"scope": "scss",
+		"prefix": "_space_brown",
+		"body": [
+			"utilities.\\$rs-space--brown"
+		],
+		"description": "48px"
+	},
+	"52px": {
+		"scope": "scss",
+		"prefix": "_space_darkgrey",
+		"body": [
+			"utilities.\\$rs-space--darkgrey"
+		],
+		"description": "52px"
+	},
+	"56px": {
+		"scope": "scss",
+		"prefix": "_space_black",
+		"body": [
+			"utilities.\\$rs-space--black"
+		],
+		"description": "56px"
+	}
+}

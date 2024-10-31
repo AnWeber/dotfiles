@@ -1,0 +1,15 @@
+// Geben Sie Ihre Tastenzuordnungen in dieser Datei ein, um die Standardwerte außer Kraft zu setzen.auto[]
+[
+  {
+    "key": "ctrl+f1",
+    "command": "workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+oem_comma",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+oem_comma",
+    "command": "workbench.action.quickOpen"
+  }
+]

@@ -1,0 +1,354 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[kotlin]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "files.trimTrailingWhitespace": false
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.enabled": false,
+  "cSpell.language": "en,de-DE",
+  "chatrs.completionProvider": "none",
+  "chatrs.logLevel": "debug",
+  "css.lint.zeroUnits": "error",
+  "debug.console.fontSize": 13,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "bottom",
+  "editor.stickyScroll.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "errorLens.delay": 5000,
+  "errorLens.enabledInMergeConflict": false,
+  "errorLens.messageEnabled": false,
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.statusBarIconsPriority": 1000,
+  "errorLens.statusBarMessageAlignment": "right",
+  "errorLens.statusBarMessageEnabled": true,
+  "errorLens.statusBarMessageTemplate": "$message",
+  "errorLens.statusBarMessageType": "closestProblem",
+  "explorer.autoReveal": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "*.bpmn": "html",
+    "*.svg": "html",
+    "*.xml": "html",
+    "response": "jsonc"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "git-buttons": {
+    "pullContext": true,
+    "pushContext": true
+  },
+  "git-buttons-conflict": {
+    "conflict_accept_both": true,
+    "conflict_accept_current": true,
+    "conflict_accept_incoming": true
+  },
+  "git.autoStash": true,
+  "git.autofetch": true,
+  "git.branchSortOrder": "alphabetically",
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "git.inputValidationSubjectLength": 100,
+  "git.rebaseWhenSync": true,
+  "git.showActionButton": {
+    "commit": false,
+    "publish": false,
+    "sync": false
+  },
+  "gitlab.branchProtection": false,
+  "gitlab.duoCodeSuggestions.enabled": false,
+  "gitlens.advanced.abbreviatedShaLength": 10,
+  "gitlens.advanced.fileHistoryFollowsRenames": true,
+  "gitlens.advanced.fileHistoryShowAllBranches": true,
+  "gitlens.advanced.repositorySearchDepth": 2,
+  "gitlens.blame.avatars": false,
+  "gitlens.changes.locations": [
+    "gutter",
+    "line",
+    "overview"
+  ],
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.currentLine.dateFormat": "DD.MM.YYYY HH:mm",
+  "gitlens.currentLine.format": "${author}${date}${' via 'pullRequest}${ • message|50?}",
+  "gitlens.defaultGravatarsStyle": "identicon",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "branch-create:command",
+    "push:command"
+  ],
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": false,
+      "compare": true
+    },
+    "editorGutter": false,
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false
+    },
+    "ghpr": false,
+    "scm": {
+      "graph": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "share": true,
+      "stash": true
+    },
+    "scmItemInline": {
+      "stash": false
+    },
+    "scmRepository": false,
+    "scmRepositoryInline": false
+  },
+  "gitlens.mode.statusBar.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.sortBranchesBy": "name:asc",
+  "gitlens.sortTagsBy": "name:asc",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.terminalLinks.showDetailsView": false,
+  "gitlens.views.branches.avatars": false,
+  "gitlens.views.branches.files.layout": "tree",
+  "gitlens.views.branches.showBranchComparison": false,
+  "gitlens.views.commitDetails.autolinks.enabled": false,
+  "gitlens.views.commitDetails.autolinks.enhanced": false,
+  "gitlens.views.commitDetails.avatars": false,
+  "gitlens.views.commitDetails.pullRequests.enabled": false,
+  "gitlens.views.commits.avatars": false,
+  "gitlens.views.commits.pullRequests.enabled": false,
+  "gitlens.views.commits.showBranchComparison": false,
+  "gitlens.views.fileHistory.avatars": false,
+  "gitlens.views.lineHistory.avatars": false,
+  "gitlens.views.remotes.avatars": false,
+  "gitlens.views.repositories.avatars": false,
+  "gitlens.views.repositories.pullRequests.enabled": false,
+  "gitlens.views.repositories.showBranchComparison": false,
+  "gitlens.views.repositories.showContributors": false,
+  "gitlens.views.repositories.showStashes": false,
+  "gitlens.views.repositories.showTags": false,
+  "gitlens.views.showRelativeDateMarkers": false,
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true,
+  "go.coverageDecorator": {
+    "type": "gutter"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "html.format.wrapAttributes": "force-aligned",
+  "httpyac.environmentPickMany": false,
+  "httpyac.logOutputChannelOptions": {
+    "requestBodyLength": 1024,
+    "requestHeaders": true,
+    "requestOutput": true,
+    "responseBodyLength": 97,
+    "responseHeaders": true
+  },
+  "httpyac.logResetOutputchannel": true,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.suggest.autoImports": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.preview.fontFamily": "FiraCode NF, Consolas,-apple,  'Courier New', monospace-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
+  "notebook.diff.enablePreview": false,
+  "redhat.telemetry.enabled": false,
+  "remote.SSH.remotePlatform": {
+    "192.168.2.31": "linux"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "scm.showIncomingChanges": "never",
+  "scm.showOutgoingChanges": "never",
+  "scss.lint.zeroUnits": "error",
+  "search.exclude": {
+    "**/.angular": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/e2e-test-report": true
+  },
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "security.promptForLocalFileProtocolHandling": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredExtensions": [
+    "angular.ng-template",
+    "ckolkman.vscode-postgres",
+    "gitlab.gitlab-workflow",
+    "mathiasfrohlich.kotlin",
+    "robocorp.robotframework-lsp",
+    "tumit.vscode-rf-formatter",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "mikehanson.auto-barrel",
+    "pranaygp.vscode-css-peek",
+    "betterthantomorrow.calva"
+  ],
+  "sortJSON.contextMenu": {
+    "sortJSONAlphaNum": false,
+    "sortJSONAlphaNumReverse": false,
+    "sortJSONKeyLength": false,
+    "sortJSONKeyLengthReverse": false,
+    "sortJSONType": false,
+    "sortJSONTypeReverse": false,
+    "sortJSONValues": false,
+    "sortJSONValuesReverse": false
+  },
+  "statusbar_command.applicationCommands": [
+    {
+      "alignment": "left",
+      "command": "editor.action.sortLinesAscending",
+      "id": "sbc.sort",
+      "name": "Sortieren",
+      "priority": 0,
+      "text": "$(list-ordered)",
+      "tooltip": "Sortieren"
+    },
+    {
+      "alignment": "left",
+      "command": "go.test.cursor",
+      "id": "sbc_go",
+      "include": "\\.[go]",
+      "name": "Go Run Test at cursor",
+      "priority": 1000,
+      "text": "$(debug-all)",
+      "tooltip": "Go Run Test at cursor"
+    },
+    {
+      "alignment": "left",
+      "command": "editor.action.commentLine",
+      "id": "sbc.comment_toggle",
+      "name": "Comment",
+      "text": "$(comment-unresolved)",
+      "tooltip": "Comment"
+    },
+    {
+      "alignment": "left",
+      "command": "coverage-gutters.watchCoverageAndVisibleEditors",
+      "id": "sbc_coverage",
+      "include": "\\.[ts|tsx]",
+      "name": "Coverage",
+      "text": "$(debug-coverage)",
+      "tooltip": "Coverage"
+    },
+    {
+      "alignment": "right",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "id": "sbc.terminal",
+      "name": "Terminal",
+      "priority": 1000,
+      "text": "$(terminal)",
+      "tooltip": "Terminal"
+    },
+    {
+      "alignment": "right",
+      "command": "typescript.restartTsServer",
+      "id": "sbc_ts",
+      "include": "\\.[ts|tsx|vue]",
+      "name": "Typescript Server neustarten",
+      "priority": 1000,
+      "text": "$(debug-all)",
+      "tooltip": "Typescript Server neustarten"
+    }
+  ],
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.tabs.location": "left",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.suggest.autoImports": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "versionlens.caching.duration": 100,
+  "versionlens.logging.level": "debug",
+  "versionlens.npm.prereleaseTagFilter": [
+    "SNAPSHOT"
+  ],
+  "versionlens.suggestions.showOnStartup": true,
+  "versionlens.suggestions.showPrereleasesOnStartup": true,
+  "window.commandCenter": true,
+  "window.openFoldersInNewWindow": "on",
+  "workbench.cloudChanges.autoResume": "off",
+  "workbench.cloudChanges.continueOn": "off",
+  "workbench.colorTheme": "BluePaint",
+  "workbench.editorAssociations": {
+    "*.http": "default"
+  },
+  "workbench.enableExperiments": false,
+  "workbench.iconTheme": "dot_small",
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "yaml.customTags": [
+    "!reference sequence"
+  ],
+  "yaml.format.singleQuote": true
+}

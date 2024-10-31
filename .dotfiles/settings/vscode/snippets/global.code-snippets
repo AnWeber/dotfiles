@@ -1,0 +1,47 @@
+{
+	"lorem": {
+		"prefix": [
+			"_lorem"
+		],
+		"body": [
+			"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		],
+		"description": "lorem ipsum"
+	},
+	"lorem100": {
+		"prefix": [
+			"_lorem100"
+		],
+		"body": [
+			"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l"
+		],
+		"description": "lorem ipsum"
+	},
+	"lorem255": {
+		"prefix": [
+			"_lorem"
+		],
+		"body": [
+			"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no seaa"
+		],
+		"description": "lorem ipsum"
+	},
+	"count": {
+		"prefix": [
+			"_count"
+		],
+		"body": [
+			"1234567890"
+		],
+		"description": "create 10 numbers"
+	},
+	"uuid": {
+		"prefix": [
+			"_uuid"
+		],
+		"body": [
+			"${UUID}"
+		],
+		"description": "UUID"
+	}
+}
