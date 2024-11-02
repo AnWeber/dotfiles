@@ -30,10 +30,10 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.enabled": false,
-  "cSpell.language": "en,de-DE",
   "chatrs.completionProvider": "none",
   "chatrs.logLevel": "debug",
+  "cSpell.enabled": false,
+  "cSpell.language": "en,de-DE",
   "css.lint.zeroUnits": "error",
   "debug.console.fontSize": 13,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -82,8 +82,8 @@
     "conflict_accept_current": true,
     "conflict_accept_incoming": true
   },
-  "git.autoStash": true,
   "git.autofetch": true,
+  "git.autoStash": true,
   "git.branchSortOrder": "alphabetically",
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
@@ -200,11 +200,11 @@
   "gitlens.views.repositories.showStashes": false,
   "gitlens.views.repositories.showTags": false,
   "gitlens.views.showRelativeDateMarkers": false,
-  "go.coverOnSingleTest": true,
-  "go.coverOnSingleTestFile": true,
   "go.coverageDecorator": {
     "type": "gutter"
   },
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true,
   "go.toolsManagement.autoUpdate": true,
   "html.format.wrapAttributes": "force-aligned",
   "httpyac.environmentPickMany": false,
@@ -223,10 +223,10 @@
   "markdown.preview.fontFamily": "FiraCode NF, Consolas,-apple,  'Courier New', monospace-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
   "notebook.diff.enablePreview": false,
   "redhat.telemetry.enabled": false,
+  "remote.autoForwardPortsSource": "hybrid",
   "remote.SSH.remotePlatform": {
     "192.168.2.31": "linux"
   },
-  "remote.autoForwardPortsSource": "hybrid",
   "scm.showIncomingChanges": "never",
   "scm.showOutgoingChanges": "never",
   "scss.lint.zeroUnits": "error",

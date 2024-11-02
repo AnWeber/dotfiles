@@ -137,10 +137,10 @@
 
 [delta "bluepaint"]
     light = true
-    pink = 224
-    dark-pink = 212
-    green = 156
-    dark-green = 078
+    pink = 208
+    dark-pink = 202
+    green = 22
+    dark-green = 41
     blue = 004
     grey = 247
     commit-decoration-style = bluepaint.blue
