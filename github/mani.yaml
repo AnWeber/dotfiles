@@ -1,4 +1,3 @@
----
 import:
   - ~/.dotfiles/settings/mani.yaml
 projects:
@@ -62,7 +61,7 @@ projects:
       - httpyac
     url: https://github.com/AnWeber/httpbook-monacorenderer.git
   httpyac:
-    path: ./httpyac/vscode-httpyac/node_modules/httpyac
+    path: ./httpyac/httpyac
     url: |
       https://github.com/AnWeber/httpyac.git
   httpyac.github.io:
@@ -152,11 +151,16 @@ projects:
     tags:
       - vscode
     url: https://github.com/AnWeber/vue-cli-plugin-compression.git
-  xfilter-hx:
-    path: ./xfilter-hx
-    url: |
-      https://github.com/AnWeber/xfilter-hx.git
   xmldom-format:
     path: ./httpyac/xmldom-format
     tags: []
     url: https://github.com/AnWeber/xmldom-format
+  httpyac-extras:
+    path: ./httpyac/httpyac-extras
+    url: |
+      https://github.com/alekdavis/httpyac-extras.git
+  vscode-local-sync:
+    tags:
+      - vscode
+    path: ./vscode-local-sync
+    url: https://github.com/AnWeber/vscode-local-sync.git
