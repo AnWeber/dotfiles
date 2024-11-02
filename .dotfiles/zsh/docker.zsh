@@ -19,3 +19,6 @@ alias docker-prune=' \
   docker image prune -f ; \
   docker network prune -f ; \
   docker volume prune -f '
+
+
+alias dockr='docker run -v $(pwd):/data --workdir /data --rm -it '
