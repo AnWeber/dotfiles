@@ -53,15 +53,6 @@
   "editor.stickyScroll.enabled": false,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
-  "errorLens.delay": 5000,
-  "errorLens.enabledInMergeConflict": false,
-  "errorLens.messageEnabled": false,
-  "errorLens.statusBarColorsEnabled": true,
-  "errorLens.statusBarIconsPriority": 1000,
-  "errorLens.statusBarMessageAlignment": "right",
-  "errorLens.statusBarMessageEnabled": true,
-  "errorLens.statusBarMessageTemplate": "$message",
-  "errorLens.statusBarMessageType": "closestProblem",
   "explorer.autoReveal": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
@@ -290,6 +281,14 @@
       "name": "Comment",
       "text": "$(comment-unresolved)",
       "tooltip": "Comment"
+    },
+    {
+      "alignment": "left",
+      "command": "editor.action.organizeImports",
+      "id": "sbc.organize_import",
+      "name": "organize_import",
+      "text": "$(references)",
+      "tooltip": "Organize Imports"
     },
     {
       "alignment": "left",
