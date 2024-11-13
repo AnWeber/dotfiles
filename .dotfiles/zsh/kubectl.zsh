@@ -12,3 +12,5 @@ fi
 
 
 alias k="kubectl"
+
+alias kubekill="pkill kubectl -9"
