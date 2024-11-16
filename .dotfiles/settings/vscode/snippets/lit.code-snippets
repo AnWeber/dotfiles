@@ -1,0 +1,172 @@
+{
+  "litComponentDecorator": {
+    "scope": "typescript",
+    "prefix": "_lit",
+    "body": [
+      "import { LitElement, html, TemplateResult } from 'lit';\n",
+      "@customElementIfNotExists('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}')",
+      "export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} extends LitElement {\n",
+      "\tpublic override render(): TemplateResult {",
+      "\t\treturn html``",
+      "\t}",
+      "}"
+    ],
+    "description": "Lit Compoennt"
+  },
+  "litStyles": {
+    "scope": "typescript",
+    "prefix": "_litStyle",
+    "body": [
+      "/** styles */",
+      "public static override styles = unsafeCSS(componentCss);"
+    ],
+    "description": "Lit Styles"
+  },
+  "importStyles": {
+    "scope": "typescript",
+    "prefix": "_importStyle",
+    "body": [
+      "import componentCss from './${TM_FILENAME_BASE/.scss?inline//gi}.scss?inline';"
+    ],
+    "description": "Lit Styles"
+  },
+  "litPropertyGetter": {
+    "scope": "typescript",
+    "prefix": "_litGet",
+    "body": [
+      "private _${1:name}?: ${2:type};",
+      "public get ${1:name}(): ${2:type} | undefined{",
+      "\treturn this._${1:name};",
+      "}",
+      "@property()",
+      "public set ${1:name}(${1:name}:${2:type}){",
+      "\tthis._${1:name} = ${1:name};",
+      "}"
+    ],
+    "description": "Lit Property Getter"
+  },
+  "litProperty": {
+    "scope": "typescript",
+    "prefix": "_litProperty",
+    "body": [
+      "@property()",
+      "public ${1:name}: ${2:type};",
+    ],
+    "description": "Lit Property"
+  },
+  "litState": {
+    "scope": "typescript",
+    "prefix": "_litState",
+    "body": [
+      "@state()",
+      "private _${1:name}?: ${2:type};",
+    ],
+    "description": "Lit State"
+  },
+  "litConnectedCallback": {
+    "scope": "typescript",
+    "prefix": "_litConnect",
+    "body": [
+      "public override connectedCallback(): void {",
+      "\tsuper.connectedCallback();",
+      "}",
+    ],
+    "description": "Lit connectedCallback"
+  },
+  "litDisConnectedCallback": {
+    "scope": "typescript",
+    "prefix": "_litDisconnect",
+    "body": [
+      "public override disconnectedCallback(): void {",
+      "\tsuper.disconnectedCallback();",
+      "}",
+    ],
+    "description": "Lit connectedCallback"
+  },
+  "litFirstUpdated": {
+    "scope": "typescript",
+    "prefix": "_litFirstUpdated",
+    "body": [
+      "protected override firstUpdated(propertyValues: PropertyValues<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}>): void {",
+      "\tsuper.firstUpdated(propertyValues);",
+      "}",
+    ],
+    "description": "Lit firstUpdated"
+  },
+  "litUpdated": {
+    "scope": "typescript",
+    "prefix": "_litUpdated",
+    "body": [
+      "protected override updated(propertyValues: PropertyValues<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}>): void {",
+      "\tsuper.updated(propertyValues);",
+      "}",
+    ],
+    "description": "Lit updated"
+  },
+  "litSpec": {
+    "scope": "typescript",
+    "prefix": "_spec",
+    "body": [
+      "import { ${TM_FILENAME_BASE/(.*).spec/${1:/pascalcase}/g} } from './${TM_FILENAME_BASE/.spec//gi}';\n",
+      "describe(\"${TM_FILENAME_BASE/.spec//gi}\", () => {",
+      "  it(\"should create\", () => {",
+      "    expect(${TM_FILENAME_BASE/(.*).spec/${1:/pascalcase}/g}).toBeDefined();",
+      "  });",
+      "});"
+    ],
+    "description": "create spec file"
+  },
+  "litSpecComponent": {
+    "scope": "typescript",
+    "prefix": "_specComponent",
+    "body": [
+      "import { ${TM_FILENAME_BASE/(.*).spec/${1:/pascalcase}/g} } from \"./${TM_FILENAME_BASE/.spec//gi}\";",
+      "",
+      "describe(\"${TM_FILENAME_BASE/.spec//gi}\", () => {",
+      "let element: ${TM_FILENAME_BASE/(.*).spec/${1:/pascalcase}/g};",
+      "beforeEach(async () => {",
+      "element = document.createElement(\"rs-${TM_FILENAME_BASE/.spec//gi}\");",
+      "document.body.appendChild(element);",
+      "await element.updateComplete;",
+      "});",
+      "",
+      "afterEach(() => {",
+      "element?.remove();",
+      "});",
+      "",
+      "it(\"should create\", () => {",
+      "expect(element).instanceOf(${TM_FILENAME_BASE/(.*).spec/${1:/pascalcase}/g});",
+      "});",
+      "});"
+    ],
+    "description": "create spec file"
+  },
+  "litClasseMap": {
+    "scope": "html",
+    "prefix": "_litClassMap",
+    "body": [
+      "class=${classMap(${1:class1}, ${2:class2}, ${3:class3})}"
+    ]
+  },
+  "litRepeat": {
+    "scope": "html",
+    "prefix": "_litRepeat",
+    "body": [
+      "${repeat(${1:array}, ${2:key}, (item) => ${3:class3})}"
+    ]
+  },
+  "litClick": {
+    "scope": "html",
+    "prefix": "_litClick",
+    "body": [
+      "@click=${() => ${1:{\\}}}"
+    ]
+  },
+  "litEvent": {
+    "scope": "html",
+    "prefix": "_litEvent",
+    "body": [
+      "@${1:name}=${(evt: CustomEvent<boolean>) => ${1:function}}"
+    ]
+  }
+}

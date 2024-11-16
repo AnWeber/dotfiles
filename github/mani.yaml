@@ -19,6 +19,12 @@ projects:
       - vscode
       - main
     url: https://github.com/AnWeber/bluepaint.git
+  chrome_extension_close_tab:
+    path: ./chrome_extension_close_tab
+    tags:
+      - vscode
+      - main
+    url: https://github.com/AnWeber/chrome_extension_close_tab.git
   cli:
     path: ./cli
     tags:
