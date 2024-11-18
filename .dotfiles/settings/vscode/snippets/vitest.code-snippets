@@ -1,0 +1,24 @@
+{
+  "viMock": {
+    "scope": "typescript",
+    "prefix": "_viMock",
+    "body": [
+      "vi.mock(\"@${1:}\", () => {",
+      "\treturn {",
+      "\t};",
+      "});"
+    ],
+  },
+  "viMockImport": {
+    "scope": "typescript",
+    "prefix": "_viMockImport",
+    "body": [
+      "vi.mock(\"@${1:}\", async (importOriginal) => {",
+      "\tconst actual = await importOriginal();",
+      "\treturn {",
+      "\t\t...(actual as Record<string, unknown>),",
+      "\t};",
+      "});"
+    ]
+  }
+}
