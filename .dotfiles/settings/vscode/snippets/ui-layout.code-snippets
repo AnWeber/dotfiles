@@ -1,121 +1,139 @@
 {
-	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
-	// Placeholders with the same ids are connected.
-	// Example:
 	"2px": {
-		"scope": "scss",
-		"prefix": "_space_yellow",
 		"body": [
 			"utilities.\\$rs-space--yellow"
 		],
-		"description": "2px"
+		"description": "2px",
+		"prefix": "_space_yellow",
+		"scope": "scss"
+	},
+	"4px": {
+		"body": [
+			"utilities.\\$rs-space--cyan"
+		],
+		"description": "4px",
+		"prefix": "_space_cyan",
+		"scope": "scss"
 	},
 	"8px": {
-		"scope": "scss",
-		"prefix": "_space_green",
 		"body": [
 			"utilities.\\$rs-space--green"
 		],
-		"description": "8px"
+		"description": "8px",
+		"prefix": "_space_green",
+		"scope": "scss"
 	},
 	"12px": {
-		"scope": "scss",
-		"prefix": "_space_orange",
 		"body": [
 			"utilities.\\$rs-space--orange"
 		],
-		"description": "12px"
+		"description": "12px",
+		"prefix": "_space_orange",
+		"scope": "scss"
 	},
 	"16px": {
-		"scope": "scss",
-		"prefix": "_space_pink",
 		"body": [
 			"utilities.\\$rs-space--pink"
 		],
-		"description": "16px"
+		"description": "16px",
+		"prefix": "_space_pink",
+		"scope": "scss"
 	},
 	"20px": {
-		"scope": "scss",
-		"prefix": "_space_purple",
 		"body": [
 			"utilities.\\$rs-space--purple"
 		],
-		"description": "20px"
+		"description": "20px",
+		"prefix": "_space_purple",
+		"scope": "scss"
 	},
 	"24px": {
-		"scope": "scss",
-		"prefix": "_space_blue",
 		"body": [
 			"utilities.\\$rs-space--blue"
 		],
-		"description": "24px"
+		"description": "24px",
+		"prefix": "_space_blue",
+		"scope": "scss"
 	},
 	"28px": {
-		"scope": "scss",
-		"prefix": "_space_marine",
 		"body": [
 			"utilities.\\$rs-space--marine"
 		],
-		"description": "28px"
+		"description": "28px",
+		"prefix": "_space_marine",
+		"scope": "scss"
 	},
 	"32px": {
-		"scope": "scss",
-		"prefix": "_space_grey",
 		"body": [
 			"utilities.\\$rs-space--grey"
 		],
-		"description": "32px"
+		"description": "32px",
+		"prefix": "_space_grey",
+		"scope": "scss"
 	},
 	"36px": {
-		"scope": "scss",
-		"prefix": "_space_bluegreen",
 		"body": [
 			"utilities.\\$rs-space--bluegreen"
 		],
-		"description": "36px"
+		"description": "36px",
+		"prefix": "_space_bluegreen",
+		"scope": "scss"
 	},
 	"40px": {
-		"scope": "scss",
-		"prefix": "_space_darkviolet",
 		"body": [
 			"utilities.\\$rs-space--darkviolet"
 		],
-		"description": "40px"
+		"description": "40px",
+		"prefix": "_space_darkviolet",
+		"scope": "scss"
 	},
 	"44px": {
-		"scope": "scss",
-		"prefix": "_space_brownred",
 		"body": [
 			"utilities.\\$rs-space--brownred"
 		],
-		"description": "44px"
+		"description": "44px",
+		"prefix": "_space_brownred",
+		"scope": "scss"
 	},
 	"48px": {
-		"scope": "scss",
-		"prefix": "_space_brown",
 		"body": [
 			"utilities.\\$rs-space--brown"
 		],
-		"description": "48px"
+		"description": "48px",
+		"prefix": "_space_brown",
+		"scope": "scss"
 	},
 	"52px": {
-		"scope": "scss",
-		"prefix": "_space_darkgrey",
 		"body": [
 			"utilities.\\$rs-space--darkgrey"
 		],
-		"description": "52px"
+		"description": "52px",
+		"prefix": "_space_darkgrey",
+		"scope": "scss"
 	},
 	"56px": {
-		"scope": "scss",
-		"prefix": "_space_black",
 		"body": [
 			"utilities.\\$rs-space--black"
 		],
-		"description": "56px"
+		"description": "56px",
+		"prefix": "_space_black",
+		"scope": "scss"
+	},
+	"layoutImport": {
+		"body": [
+			"/*!",
+			"* COPYRIGHT (C) 2024 BY IPOQUE GMBH, A ROHDE & SCHWARZ COMPANY",
+			"* The PROGRAM is protected by national and international copyright laws and",
+			"* conventions. The copyright lies with IPOQUE GMBH, A ROHDE & SCHWARZ COMPANY,",
+			"* unless expressly stated otherwise. All rights reserved. Especially the",
+			"* reproduction and distribution of the PROGRAM without written permission of",
+			"* the copyright owner is prohibited.",
+			"* See LICENSE for licensing information.",
+			"*/",
+			"",
+			"@use \"@8IP/ui.layout/dist/utilities\";"
+		],
+		"prefix": "_importUtils",
+		"scope": "scss"
 	}
 }

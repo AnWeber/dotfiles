@@ -47,21 +47,15 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.minimap.enabled": false,
+  "editor.pasteAs.preferences": [
+    "text.updateImports"
+  ],
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "all",
   "editor.snippetSuggestions": "bottom",
   "editor.stickyScroll.enabled": false,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
-  "errorLens.delay": 5000,
-  "errorLens.enabledInMergeConflict": false,
-  "errorLens.messageEnabled": false,
-  "errorLens.statusBarColorsEnabled": true,
-  "errorLens.statusBarIconsPriority": 1000,
-  "errorLens.statusBarMessageAlignment": "right",
-  "errorLens.statusBarMessageEnabled": true,
-  "errorLens.statusBarMessageTemplate": "$message",
-  "errorLens.statusBarMessageType": "closestProblem",
   "explorer.autoReveal": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
@@ -88,9 +82,14 @@
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
   "git.enableSmartCommit": true,
+  "git.enableStatusBarSync": false,
   "git.ignoreRebaseWarning": true,
   "git.inputValidationSubjectLength": 100,
   "git.rebaseWhenSync": true,
+  "git.repositoryScanIgnoredFolders": [
+    "node_modules",
+    "inv"
+  ],
   "git.showActionButton": {
     "commit": false,
     "publish": false,
@@ -179,14 +178,9 @@
   "gitlens.sortBranchesBy": "name:asc",
   "gitlens.sortTagsBy": "name:asc",
   "gitlens.statusBar.enabled": false,
-  "gitlens.terminalLinks.showDetailsView": false,
   "gitlens.views.branches.avatars": false,
   "gitlens.views.branches.files.layout": "tree",
   "gitlens.views.branches.showBranchComparison": false,
-  "gitlens.views.commitDetails.autolinks.enabled": false,
-  "gitlens.views.commitDetails.autolinks.enhanced": false,
-  "gitlens.views.commitDetails.avatars": false,
-  "gitlens.views.commitDetails.pullRequests.enabled": false,
   "gitlens.views.commits.avatars": false,
   "gitlens.views.commits.pullRequests.enabled": false,
   "gitlens.views.commits.showBranchComparison": false,
@@ -227,8 +221,6 @@
   "remote.SSH.remotePlatform": {
     "192.168.2.31": "linux"
   },
-  "scm.showIncomingChanges": "never",
-  "scm.showOutgoingChanges": "never",
   "scss.lint.zeroUnits": "error",
   "search.exclude": {
     "**/.angular": true,
