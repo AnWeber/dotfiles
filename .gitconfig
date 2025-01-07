@@ -164,3 +164,6 @@
     plus-style = syntax bluepaint.green
     syntax-theme = ansi
     zero-style = syntax
+[credential "https://vcs01.rsint.net"]
+	helper = 
+	helper = !/home/web_andr/.asdf/installs/glab/1.46.0/bin/glab auth git-credential
