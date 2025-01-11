@@ -12,7 +12,6 @@ tasks:
     cmd: |
       git log -1 --format="%cd (%cr)" -n 1 --date=format:"%d  %b %y" \
       | sed 's/ //'
-
   view:
     spec: table
     target: main
@@ -41,10 +40,7 @@ shell: zsh
 
 specs:
   default:
-    output: text
-    omit_empty: true
-  text:
-    output: text
+    output: stream
     omit_empty: true
   table:
     output: table
@@ -52,7 +48,7 @@ specs:
 
 themes:
   default:
-    text:
+    stream:
       prefix: true
       prefix_colors: ["green", "blue", "red", "yellow", "magenta", "cyan"]
       header: false

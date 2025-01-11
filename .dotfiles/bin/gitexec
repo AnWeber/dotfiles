@@ -42,8 +42,8 @@ if [[ $trace == "1" ]]; then
   echo $args
 fi
 if [[ $tag == "all" ]]; then
-  mani exec ${color} --silent --omit-empty --all -- "$args"
+  mani exec ${color} --silent --omit-empty-rows --all -- "$args"
 else
-  mani exec ${color} --silent --omit-empty --tags $tag -- "$args"
+  mani exec ${color} --silent --omit-empty-rows --tags $tag -- "$args"
 fi
 

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 
-gitexec git whid | sort -k2
+gitexec git whid | sort -r -k3
