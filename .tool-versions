@@ -8,7 +8,6 @@ github-cli 2.65.0
 glab 1.51.0
 gofumpt 0.7.0
 golangci-lint 1.63.4
-java openjdk-22
 jq 1.7.1
 mani 0.30.0
 neovim stable
