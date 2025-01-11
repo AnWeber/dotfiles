@@ -27,9 +27,9 @@ mergeRequests=[]
 if type "glab" &> /dev/null; then
   mergeRequests=$(glab mr list | cat)
 fi
-allBranches=$(git branch -r | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD)$")
+allBranches=$(git branch --format='%(refname:short)' -r | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD)$")
 defaultbranch=$(git branch-default)
-merged=$(git branch -r --merged $defaultbranch | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD)$")
+merged=$(git branch --format='%(refname:short)' -r --merged $defaultbranch | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD)$")
 
 for branch in ${allBranches[@]}; do
   noOriginBranch=$(echo $branch | sed 's;origin/;;g')

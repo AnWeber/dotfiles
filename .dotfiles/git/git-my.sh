@@ -14,7 +14,7 @@ if [ -z "$user" ]; then
   user="Andreas Weber"
 fi
 
-allBranches=$(git branch -r --quiet | egrep -v "(^\*|master|main|dev|development)$")
+allBranches=$(git branch --format='%(refname:short)' -r --quiet | egrep -v "(^\*|master|main|dev|development)$")
 for branch in ${allBranches[@]}; do
   if ! [ -z "$now" ] || [ -z "$(git log -1 --since='$weeks week ago' -s $branch)" ]; then
     author=$(git log --color --format="%an" $branch | head -n 1)

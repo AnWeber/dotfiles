@@ -68,6 +68,9 @@ projects:
     url: https://github.com/AnWeber/httpbook-monacorenderer.git
   httpyac:
     path: ./httpyac/httpyac
+    tags:
+      - main
+      - httpyac
     url: |
       https://github.com/AnWeber/httpyac.git
   httpyac.github.io:
@@ -86,19 +89,29 @@ projects:
     url: https://github.com/AnWeber/lit-hls-mock.git
   lit-inputs:
     path: ./lit-inputs
-    tags: []
+    tags:
+      - main
+      - lit
     url: https://github.com/AnWeber/lit-inputs.git
   lit-maplibre:
     path: ./lit-maplibre
+    tags:
+      - main
+      - lit
     url: |
       https://github.com/AnWeber/lit-maplibre.git
   lit-mediaplayer-intercept:
     path: ./lit-mediaplayer-intercept
+    tags:
+      - main
+      - lit
     url: |
       https://github.com/AnWeber/lit-mediaplayer-intercept.git
   lit-pdf:
     path: ./lit-pdf
-    tags: []
+    tags:
+      - main
+      - lit
     url: https://github.com/AnWeber/lit-pdf.git
   node-httpyac:
     path: ./httpyac/node-httpyac
@@ -133,12 +146,16 @@ projects:
     url: https://github.com/AnWeber/vscode-gitbuttons.git
   vscode-httpyac:
     path: ./httpyac/vscode-httpyac
+    tags:
+      - main
+      - httpyac
     url: |
       https://github.com/AnWeber/vscode-httpyac.git
   vscode-mani:
     path: ./vscode-mani
     tags:
       - vscode
+      - main
     url: https://github.com/AnWeber/vscode-mani.git
   vscode-snippets-vars:
     path: ./vscode-snippets-vars
@@ -152,21 +169,29 @@ projects:
   vscode-timewarrior:
     tags:
       - vscode
+      - main
     url: https://github.com/AnWeber/vscode-timewarrior.git
   vue-cli-plugin-compression:
     tags:
-      - vscode
+      - vue
+      - main
     url: https://github.com/AnWeber/vue-cli-plugin-compression.git
   xmldom-format:
     path: ./httpyac/xmldom-format
-    tags: []
+    tags:
+      - main
+      - httpyac
     url: https://github.com/AnWeber/xmldom-format
   httpyac-extras:
     path: ./httpyac/httpyac-extras
+    tags:
+      - main
+      - httpyac
     url: |
       https://github.com/alekdavis/httpyac-extras.git
   vscode-local-sync:
     tags:
       - vscode
+      - main
     path: ./vscode-local-sync
     url: https://github.com/AnWeber/vscode-local-sync.git

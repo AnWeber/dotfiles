@@ -123,6 +123,7 @@
   undo = reset HEAD~1 --mixed
   # unstage all changes
   unstage = reset HEAD --
+  whid = !bash ~/.dotfiles/git/git-whid.sh
 
 
 [delta]
@@ -165,5 +166,5 @@
     syntax-theme = ansi
     zero-style = syntax
 [credential "https://vcs01.rsint.net"]
-	helper = 
+	helper =
 	helper = !/home/web_andr/.asdf/installs/glab/1.46.0/bin/glab auth git-credential
