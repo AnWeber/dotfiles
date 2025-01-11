@@ -26,6 +26,7 @@
   "ms-vscode-remote.remote-containers",
   "ms-vscode-remote.remote-wsl",
   "ms-vscode-remote.vscode-remote-extensionpack",
+  "ms-vscode.hexeditor",
   "ms-vscode.live-server",
   "ms-vscode.remote-server",
   "pascalreitermann93.vscode-yaml-sort",
@@ -38,6 +39,5 @@
   "streetsidesoftware.code-spell-checker",
   "streetsidesoftware.code-spell-checker-german",
   "sumneko.lua",
-  "tyriar.sort-lines",
-  "unifiedjs.vscode-mdx"
+  "tyriar.sort-lines"
 ]

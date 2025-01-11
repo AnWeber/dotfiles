@@ -8,6 +8,10 @@ while [ : ]; do
       color="--no-color"
       shift
       ;;
+    --trace)
+      trace="1"
+      shift
+      ;;
     --tag)
         tag=$2
         shift
@@ -34,7 +38,7 @@ do
   fi
 done
 
-if [[ -z $color ]]; then
+if [[ $trace == "1" ]]; then
   echo $args
 fi
 if [[ $tag == "all" ]]; then

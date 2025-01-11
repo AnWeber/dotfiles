@@ -343,5 +343,5 @@
     "!reference sequence"
   ],
   "yaml.format.singleQuote": true,
-  "local-sync.removeExtensions": true
+  "chatrs.chatModel": "bge-reranker-v2-m3"
 }
