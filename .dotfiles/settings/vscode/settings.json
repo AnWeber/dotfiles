@@ -202,13 +202,6 @@
   "go.toolsManagement.autoUpdate": true,
   "html.format.wrapAttributes": "force-aligned",
   "httpyac.environmentPickMany": false,
-  "httpyac.logOutputChannelOptions": {
-    "requestBodyLength": 1024,
-    "requestHeaders": true,
-    "requestOutput": true,
-    "responseBodyLength": 97,
-    "responseHeaders": true
-  },
   "httpyac.logResetOutputchannel": true,
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.quoteStyle": "single",

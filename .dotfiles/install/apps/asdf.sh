@@ -98,6 +98,11 @@ if grep -q "zoxide" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   asdf plugin add zoxide https://github.com/nyrst/asdf-zoxide.git
 fi
 
+if grep -q "direnv" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
+  echo "direnv install"
+  asdf plugin-add direnv
+fi
+
 
 asdf install
 

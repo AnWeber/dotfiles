@@ -20,6 +20,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#1e88e5"
 
 plugins=(
   autoupdate
+  direnv
   gpg-agent
   volta
   zoxide
@@ -32,7 +33,6 @@ xbindkeys -f ~/.xbindkeysrc
 for file in $(find ~ -maxdepth 1 -name '*.env' -type f -prune | sort -nr  | tac ); do
   export $(cat "$file" | xargs);
 done
-
 
 export PATH="$HOME/.local/bin:$HOME/.dotfiles/bin:$PATH"
 
@@ -49,4 +49,3 @@ export GPG_TTY=$(tty)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export RIPGREP_CONFIG_PATH="$HOME/.dotfiles/settings/.ripgreprc"
-
