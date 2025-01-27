@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+output="$(dirname $(pwd))/ccsh"
+while [ : ]; do
+  case "$1" in
+    --output)
+        output=$2
+        shift
+        shift
+        ;;
+    *) break;;
+  esac
+done
+
+BASENAME=$(basename $(pwd))
+
+echo $output
+ccsh gitlogparser repo-scan --add-author --repo-path="$(pwd)" -o "$output/$BASENAME.cc.json"
+if test -f "sonar-project.properties"; then
+  SONAR_PROJECT_KEY=$(awk -F'sonar.projectKey=' '{print $2}' sonar-project.properties | grep -v -e '^$' )
+  ccsh sonarimport "$SONAR_HOST" "$SONAR_PROJECT_KEY" --user-token=$SONAR_TOKEN -o "$output/$BASENAME.cc.json"
+fi
