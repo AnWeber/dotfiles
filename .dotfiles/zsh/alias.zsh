@@ -6,3 +6,5 @@ alias grep='grep --color'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+alias systeminfo='cat /etc/os-release'

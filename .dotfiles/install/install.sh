@@ -17,3 +17,4 @@ fi
 ~/.dotfiles/install/apps/zsh.sh
 ~/.dotfiles/install/apps/asdf.sh
 ~/.dotfiles/install/apps/docker.sh
+~/.dotfiles/install/apps/xbindkey.sh

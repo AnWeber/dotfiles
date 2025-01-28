@@ -1,5 +1,5 @@
 
-
+source /etc/profile
 #export STARSHIP_CONFIG=~/.dotfiles/zsh/starship.toml
 #eval "$(starship init zsh)"
 #alias starhship_refresh="$(eval "$(starship init zsh)")"
@@ -28,7 +28,9 @@ plugins=(
   zsh-better-npm-completion
 )
 
-xbindkeys -f ~/.xbindkeysrc
+if type "xbindkeys" > /dev/null; then
+  xbindkeys -f ~/.xbindkeysrc
+fi
 
 for file in $(find ~ -maxdepth 1 -name '*.env' -type f -prune | sort -nr  | tac ); do
   export $(cat "$file" | xargs);
@@ -49,4 +51,4 @@ export GPG_TTY=$(tty)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export RIPGREP_CONFIG_PATH="$HOME/.dotfiles/settings/.ripgreprc"
-export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin"
+
