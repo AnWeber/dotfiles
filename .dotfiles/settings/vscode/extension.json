@@ -20,12 +20,12 @@
   "esbenp.prettier-vscode",
   "fwcd.kotlin",
   "golang.go",
+  "maattdd.gitless",
   "meganrogge.template-string-converter",
   "mikestead.dotenv",
   "ms-playwright.playwright",
   "ms-vscode-remote.remote-wsl",
   "ms-vscode-remote.vscode-remote-extensionpack",
-  "ms-vscode.hexeditor",
   "ms-vscode.live-server",
   "ms-vscode.remote-server",
   "pascalreitermann93.vscode-yaml-sort",
@@ -38,5 +38,6 @@
   "streetsidesoftware.code-spell-checker",
   "streetsidesoftware.code-spell-checker-german",
   "sumneko.lua",
-  "tyriar.sort-lines"
+  "tyriar.sort-lines",
+  "unifiedjs.vscode-mdx"
 ]

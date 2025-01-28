@@ -28,8 +28,6 @@ tasks:
           git dead
 
 targets:
-  default:
-    all: true
   main:
     all: true
   npm:

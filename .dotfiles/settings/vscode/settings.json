@@ -30,8 +30,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "chatrs.completionProvider": "none",
-  "chatrs.logLevel": "debug",
   "cSpell.enabled": false,
   "cSpell.language": "en,de-DE",
   "css.lint.zeroUnits": "error",
@@ -335,6 +333,12 @@
     "!reference sequence"
   ],
   "yaml.format.singleQuote": true,
+<<<<<<< Updated upstream
   "chatrs.chatModel": "bge-reranker-v2-m3",
   "javascript.updateImportsOnFileMove.enabled": "always"
+||||||| Stash base
+  "chatrs.chatModel": "bge-reranker-v2-m3"
+=======
+  "local-sync.removeExtensions": true
+>>>>>>> Stashed changes
 }
