@@ -38,7 +38,6 @@ done
 
 export PATH="$HOME/.local/bin:$HOME/.dotfiles/bin:$PATH"
 
-source $HOME/.asdf/asdf.sh
 source $ZSH/oh-my-zsh.sh
 
 setopt globdots

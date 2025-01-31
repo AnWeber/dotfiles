@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 if [ ! -d $HOME/.asdf ]; then
-  git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf
-  . $HOME/.asdf/asdf.sh
-  asdf plugin-add jq https://github.com/AZMCode/asdf-jq.git
-  asdf plugin-add github-cli https://github.com/bartlomiejdanek/asdf-github-cli.git
+  asdf plugin add jq https://github.com/AZMCode/asdf-jq.git
+  asdf plugin add github-cli https://github.com/bartlomiejdanek/asdf-github-cli.git
   asdf plugin add mani https://github.com/anweber/asdf-mani.git
   asdf plugin add delta https://github.com/andweeb/asdf-delta.git
   asdf install --add
@@ -18,7 +16,7 @@ if grep -q "jira-cli" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
 fi
 
 if grep -q "bat" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
-  echo "volta install"
+  echo "bat install"
   asdf plugin add bat https://gitlab.com/wt0f/asdf-bat.git
 fi
 
@@ -28,15 +26,15 @@ if grep -q "volta" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
 fi
 if grep -q "java" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "java install"
-  asdf plugin-add java https://github.com/halcyon/asdf-java.git
-  asdf plugin-add gradle https://github.com/rfrancis/asdf-gradle.git
+  asdf plugin add java https://github.com/halcyon/asdf-java.git
+  asdf plugin add gradle https://github.com/rfrancis/asdf-gradle.git
 fi
 if grep -q "kubectl" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "kubectl install"
-  asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
-  asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
-  asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
-  asdf plugin-add kubetail https://github.com/janpieper/asdf-kubetail.git
+  asdf plugin add kubectl https://github.com/asdf-community/asdf-kubectl.git
+  asdf plugin add helm https://github.com/Antiarchitect/asdf-helm.git
+  asdf plugin add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
+  asdf plugin add kubetail https://github.com/janpieper/asdf-kubetail.git
 fi
 if grep -q "glab" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "glab install"
@@ -100,7 +98,7 @@ fi
 
 if grep -q "direnv" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "direnv install"
-  asdf plugin-add direnv
+  asdf plugin add direnv
 fi
 
 
