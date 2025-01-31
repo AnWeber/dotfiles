@@ -200,10 +200,18 @@
   "go.toolsManagement.autoUpdate": true,
   "html.format.wrapAttributes": "force-aligned",
   "httpyac.environmentPickMany": false,
+  "httpyac.logOutputChannelOptions": {
+    "requestBodyLength": 1024,
+    "requestHeaders": true,
+    "requestOutput": true,
+    "responseBodyLength": 97,
+    "responseHeaders": true
+  },
   "httpyac.logResetOutputchannel": true,
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.quoteStyle": "single",
   "javascript.suggest.autoImports": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown.preview.fontFamily": "FiraCode NF, Consolas,-apple,  'Courier New', monospace-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
   "notebook.diff.enablePreview": false,
   "redhat.telemetry.enabled": false,
@@ -333,12 +341,6 @@
     "!reference sequence"
   ],
   "yaml.format.singleQuote": true,
-<<<<<<< Updated upstream
-  "chatrs.chatModel": "bge-reranker-v2-m3",
-  "javascript.updateImportsOnFileMove.enabled": "always"
-||||||| Stash base
-  "chatrs.chatModel": "bge-reranker-v2-m3"
-=======
-  "local-sync.removeExtensions": true
->>>>>>> Stashed changes
+  "local-sync.removeExtensions": true,
+  "git.replaceTagsWhenPull": true
 }
