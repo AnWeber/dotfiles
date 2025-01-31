@@ -1,5 +1,5 @@
 
-source /etc/profile
+export PATH="$HOME/.asdf/shims:$PATH"
 #export STARSHIP_CONFIG=~/.dotfiles/zsh/starship.toml
 #eval "$(starship init zsh)"
 #alias starhship_refresh="$(eval "$(starship init zsh)")"
