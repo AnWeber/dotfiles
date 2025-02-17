@@ -23,12 +23,12 @@ done
 
 if [[ $tag == "all" ]]; then
   if ! [ -z "$autoFetch" ]; then
-    mani exec --silent --omit-empty --all -- "git fetch --quiet --prune"
+    mani exec --silent --omit-empty--rows --all -- "git fetch --quiet --prune"
   fi
   mani run view --all
 else
   if ! [ -z "$autoFetch" ]; then
-    mani exec --silent --omit-empty --tags $tag -- "git fetch --quiet --prune"
+    mani exec --silent --omit-empty--rows --tags $tag -- "git fetch --quiet --prune"
   fi
   mani run view --tags $tag
 fi

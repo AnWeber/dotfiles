@@ -29,7 +29,6 @@ tasks:
 
 targets:
   main:
-    all: true
   npm:
     tags:
       - npm
@@ -42,7 +41,7 @@ specs:
     omit_empty: true
   table:
     output: table
-    omit_empty: true
+    omit_empty_rows: true
 
 themes:
   default:
