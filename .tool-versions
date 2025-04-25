@@ -1,12 +1,12 @@
 asdf-golang 1.23.5
 bat 0.25.0
 delta 0.18.2
-eza 0.20.18
+eza 0.21.1
 fd 10.2.0
-fzf 0.58.0
+fzf 0.61.3
 direnv 2.35.0
-github-cli 2.65.0
-glab 1.53.0
+github-cli 2.71.2
+glab 1.56.0
 gofumpt 0.7.0
 golangci-lint 1.63.4
 jq 1.7.1
