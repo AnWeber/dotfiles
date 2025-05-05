@@ -3,7 +3,7 @@
     "scope": "typescript",
     "prefix": "_viMock",
     "body": [
-      "vi.mock(\"@${1:}\", () => {",
+      "vi.mock(\"@${1:@}\", () => {",
       "\treturn {",
       "\t};",
       "});"
@@ -13,12 +13,20 @@
     "scope": "typescript",
     "prefix": "_viMockImport",
     "body": [
-      "vi.mock(\"@${1:}\", async (importOriginal) => {",
+      "vi.mock(\"@${1:@}\", async (importOriginal) => {",
       "\tconst actual = await importOriginal();",
       "\treturn {",
       "\t\t...(actual as Record<string, unknown>),",
       "\t};",
       "});"
+    ]
+  },
+  "viHoisted": {
+    "scope": "typescript",
+    "prefix": "_viHoisted",
+    "body": [
+      "vi.hoisted(\"\", () => ({",
+      "}));"
     ]
   }
 }
