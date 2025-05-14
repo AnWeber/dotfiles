@@ -4,7 +4,8 @@
 if [ -z $1 ]; then
  kubectl get pods -o jsonpath="{.items[*].spec.containers[*].image}" | tr -s '[[:space:]]' '\n' | sort | uniq -c
 else
-  nameWithTag=$(awk -F'/' '{print $5}' <<<  $1)
+  image=$1
+  nameWithTag=${image##*/}
   name=$(awk -F':' '{print $1}' <<<  $nameWithTag)
 
   kubectl get deployment $name -o json | jq -r ".spec.template.spec.containers | map(select(.name |  test(\"$name\"))) | map(.name) | .[]" | while read container; do
