@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-weeks=4
+weeks=8
 while [[ "$#" -gt 0 ]]; do
   case $1 in
       --erase) erase=1 ;;
@@ -27,9 +27,9 @@ mergeRequests=[]
 if type "glab" &> /dev/null; then
   mergeRequests=$(glab mr list | cat)
 fi
-allBranches=$(git branch --format='%(refname:short)' -r | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD)$")
+allBranches=$(git branch --format='%(refname:short)' -r | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD|origin)$")
 defaultbranch=$(git branch-default)
-merged=$(git branch --format='%(refname:short)' -r --merged $defaultbranch | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD)$")
+merged=$(git branch --format='%(refname:short)' -r --merged $defaultbranch | egrep -v "(^\*|master|main|dev|develop|development|head|HEAD|origin)$")
 
 for branch in ${allBranches[@]}; do
   noOriginBranch=$(echo $branch | sed 's;origin/;;g')
