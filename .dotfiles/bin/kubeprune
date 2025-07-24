@@ -6,16 +6,29 @@ while [ : ]; do
         useForce=1
         shift
         ;;
+    --helm)
+        useHelm=1
+        shift
+        ;;
     *) break;;
   esac
 done
 
 prune(){
     echo "prune ${k8context}"
+
+
+    if [ -z ${useHelm+x} ]; then
+      echo "helm not deleted"
+    else
+      helm ls --all --short | xargs -L1 helm delete
+    fi
+
     if [ -z ${useForce+x} ]; then
         kubectl delete replicasets,services,deployments,jobs,pods --all
     else
         kubectl delete replicasets,services,deployments,jobs,pods --all --force
+
     fi
 }
 
