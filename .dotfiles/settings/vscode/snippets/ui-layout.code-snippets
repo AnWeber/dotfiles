@@ -131,7 +131,7 @@
 			"* See LICENSE for licensing information.",
 			"*/",
 			"",
-			"@use \"@8IP/ui.layout/dist/utilities\";"
+			"@use \"@8IP/compass-styles/dist/utilities\";"
 		],
 		"prefix": "_importUtils",
 		"scope": "scss"

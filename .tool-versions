@@ -6,7 +6,7 @@ fd 10.2.0
 fzf 0.61.3
 direnv 2.35.0
 github-cli 2.71.2
-glab 1.56.0
+glab 1.72.0
 gofumpt 0.7.0
 golangci-lint 1.63.4
 jq 1.7.1
