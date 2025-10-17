@@ -1,4 +1,13 @@
 {
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -84,6 +93,7 @@
   "git.ignoreRebaseWarning": true,
   "git.inputValidationSubjectLength": 100,
   "git.rebaseWhenSync": true,
+  "git.replaceTagsWhenPull": true,
   "git.repositoryScanIgnoredFolders": [
     "node_modules",
     "inv"
@@ -94,6 +104,9 @@
     "sync": false
   },
   "gitlab.branchProtection": false,
+  "gitlab.duo.enabledWithoutGitlabProject": false,
+  "gitlab.duoAgentPlatform.enabled": false,
+  "gitlab.duoChat.enabled": false,
   "gitlab.duoCodeSuggestions.enabled": false,
   "gitlens.advanced.abbreviatedShaLength": 10,
   "gitlens.advanced.fileHistoryFollowsRenames": true,
@@ -217,8 +230,27 @@
       "profileName": "dev00_test_iam_rdbms_sql",
       "savePassword": true,
       "server": "sql06.lp.rsint.net",
+      "sshPassword": "",
       "sslmode": "disable",
       "user": "inv01_user"
+    },
+    {
+      "id": "79442DD7-CA3E-493D-823C-D117B772577F",
+      "groupId": "8D67D47F-773E-4896-AF3C-F9418C628CAE",
+      "authenticationType": "SqlLogin",
+      "connectTimeout": 15,
+      "applicationName": "vscode-pgsql",
+      "clientEncoding": "utf8",
+      "sslmode": "require",
+      "savePassword": true,
+      "server": "pg01b.db01.lp.dev.stargate.ipoque",
+      "user": "inv01_user",
+      "password": "",
+      "database": "eqa00_geostore",
+      "profileName": "eqa00_geostore",
+      "sshPassword": "",
+      "port": "5432",
+      "expiresOn": 0
     }
   ],
   "pgsql.serverGroups": [
@@ -355,19 +387,5 @@
   "workbench.tree.enableStickyScroll": false,
   "yaml.customTags": [
     "!reference sequence"
-  ],
-  "git.replaceTagsWhenPull": true,
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "gitlab.duo.enabledWithoutGitlabProject": false,
-  "gitlab.duoChat.enabled": false,
-  "gitlab.duoAgentPlatform.enabled": false,
-  "gitlab.showPipelineUpdateNotifications": true
+  ]
 }

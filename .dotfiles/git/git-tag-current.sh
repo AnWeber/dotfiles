@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-git tag --sort=committerdate | grep -E '^[0-9]' | tail -1
+git describe --abbrev=0 --tags
