@@ -30,15 +30,15 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "chat.commandCenter.enabled": false,
-  "chatrs.completionProvider": "none",
-  "chatrs.logLevel": "debug",
   "cSpell.enabled": false,
   "cSpell.language": "en,de-DE",
   "css.lint.zeroUnits": "error",
@@ -83,8 +83,8 @@
     "conflict_accept_current": true,
     "conflict_accept_incoming": true
   },
-  "git.autofetch": true,
   "git.autoStash": true,
+  "git.autofetch": true,
   "git.branchSortOrder": "alphabetically",
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
@@ -104,9 +104,6 @@
     "sync": false
   },
   "gitlab.branchProtection": false,
-  "gitlab.duo.enabledWithoutGitlabProject": false,
-  "gitlab.duoAgentPlatform.enabled": false,
-  "gitlab.duoChat.enabled": false,
   "gitlab.duoCodeSuggestions.enabled": false,
   "gitlens.advanced.abbreviatedShaLength": 10,
   "gitlens.advanced.fileHistoryFollowsRenames": true,
@@ -115,6 +112,7 @@
   "gitlens.blame.avatars": false,
   "gitlens.changes.locations": [
     "gutter",
+    "line",
     "overview"
   ],
   "gitlens.codeLens.authors.enabled": false,
@@ -197,74 +195,33 @@
   "gitlens.views.repositories.showStashes": false,
   "gitlens.views.repositories.showTags": false,
   "gitlens.views.showRelativeDateMarkers": false,
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true,
   "go.coverageDecorator": {
     "type": "gutter"
   },
-  "go.coverOnSingleTest": true,
-  "go.coverOnSingleTestFile": true,
   "go.toolsManagement.autoUpdate": true,
   "html.format.wrapAttributes": "force-aligned",
   "httpyac.environmentPickMany": false,
+  "httpyac.logOutputChannelOptions": {
+    "requestBodyLength": 1024,
+    "requestHeaders": true,
+    "requestOutput": true,
+    "responseBodyLength": 97,
+    "responseHeaders": true
+  },
   "httpyac.logResetOutputchannel": true,
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.quoteStyle": "single",
   "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "kotlin.debugAdapter.enabled": false,
-  "kotlin.languageServer.enabled": false,
-  "kotlinLSP.jrePathToRunLsp": "/home/web_andr/.asdf/installs/java/openjdk-21",
   "markdown.preview.fontFamily": "FiraCode NF, Consolas,-apple,  'Courier New', monospace-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
   "notebook.diff.enablePreview": false,
-  "pgsql.connections": [
-    {
-      "applicationName": "vscode-pgsql",
-      "authenticationType": "SqlLogin",
-      "clientEncoding": "utf8",
-      "connectTimeout": 15,
-      "database": "dev00_test_iam_rdbms_sql",
-      "expiresOn": 0,
-      "groupId": "8D67D47F-773E-4896-AF3C-F9418C628CAE",
-      "id": "1E254C32-67F8-413A-8E11-338F08E8E6D8",
-      "password": "",
-      "port": "14001",
-      "profileName": "dev00_test_iam_rdbms_sql",
-      "savePassword": true,
-      "server": "sql06.lp.rsint.net",
-      "sshPassword": "",
-      "sslmode": "disable",
-      "user": "inv01_user"
-    },
-    {
-      "id": "79442DD7-CA3E-493D-823C-D117B772577F",
-      "groupId": "8D67D47F-773E-4896-AF3C-F9418C628CAE",
-      "authenticationType": "SqlLogin",
-      "connectTimeout": 15,
-      "applicationName": "vscode-pgsql",
-      "clientEncoding": "utf8",
-      "sslmode": "require",
-      "savePassword": true,
-      "server": "pg01b.db01.lp.dev.stargate.ipoque",
-      "user": "inv01_user",
-      "password": "",
-      "database": "eqa00_geostore",
-      "profileName": "eqa00_geostore",
-      "sshPassword": "",
-      "port": "5432",
-      "expiresOn": 0
-    }
-  ],
-  "pgsql.serverGroups": [
-    {
-      "id": "8D67D47F-773E-4896-AF3C-F9418C628CAE",
-      "isDefault": true,
-      "name": "Servers"
-    }
-  ],
   "redhat.telemetry.enabled": false,
-  "remote.autoForwardPortsSource": "hybrid",
   "remote.SSH.remotePlatform": {
     "192.168.2.31": "linux"
   },
+  "remote.autoForwardPortsSource": "hybrid",
   "scss.lint.zeroUnits": "error",
   "search.exclude": {
     "**/.angular": true,
@@ -282,7 +239,6 @@
     "ckolkman.vscode-postgres",
     "gitlab.gitlab-workflow",
     "mathiasfrohlich.kotlin",
-    "robocorp.robotframework-lsp",
     "tumit.vscode-rf-formatter",
     "ms-kubernetes-tools.vscode-kubernetes-tools",
     "mikehanson.auto-barrel",
@@ -344,20 +300,9 @@
       "priority": 1000,
       "text": "$(terminal)",
       "tooltip": "Terminal"
-    },
-    {
-      "alignment": "right",
-      "command": "typescript.restartTsServer",
-      "id": "sbc_ts",
-      "include": "\\.[ts|tsx|vue]",
-      "name": "Typescript Server neustarten",
-      "priority": 1000,
-      "text": "$(debug-all)",
-      "tooltip": "Typescript Server neustarten"
     }
   ],
   "telemetry.telemetryLevel": "off",
-  "terminal.external.linuxExec": "zsh",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.scrollback": 5000,
   "terminal.integrated.tabs.location": "left",
@@ -371,21 +316,22 @@
   ],
   "versionlens.suggestions.showOnStartup": true,
   "versionlens.suggestions.showPrereleasesOnStartup": true,
+  "window.commandCenter": true,
   "window.openFoldersInNewWindow": "on",
   "workbench.cloudChanges.autoResume": "off",
   "workbench.cloudChanges.continueOn": "off",
   "workbench.colorTheme": "BluePaint",
   "workbench.editorAssociations": {
-    "{hexdiff}:/**/*.*": "hexEditor.hexedit",
-    "*.http": "default",
-    "*.svg": "default"
+    "*.http": "default"
   },
   "workbench.enableExperiments": false,
-  "workbench.iconTheme": "dot_small",
-  "workbench.navigationControl.enabled": false,
+  "workbench.iconTheme": "dot",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "yaml.customTags": [
     "!reference sequence"
-  ]
+  ],
+  "yaml.format.singleQuote": true,
+  "window.title": "${rootNameShort}${separator}${dirty}${activeEditorShort}",
+  "local-sync.autorestore": true
 }
