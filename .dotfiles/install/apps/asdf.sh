@@ -93,7 +93,7 @@ if grep -q "fzf" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
 fi
 if grep -q "zoxide" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then
   echo "zoxide plugin added"
-  asdf plugin add zoxide https://github.com/nyrst/asdf-zoxide.git
+  asdf plugin add zoxide https://github.com/ajeetdsouza/zoxide.git
 fi
 
 if grep -q "direnv" "$HOME/$ASDF_DEFAULT_TOOL_VERSIONS_FILENAME"; then

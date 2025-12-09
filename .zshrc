@@ -20,7 +20,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#1e88e5"
 
 plugins=(
   autoupdate
-  direnv
   gpg-agent
   volta
   zoxide
