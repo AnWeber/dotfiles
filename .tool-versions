@@ -3,7 +3,7 @@ bat 0.26.1
 delta 0.18.2
 eza 0.23.4
 fd 10.3.0
-fzf 0.70.3
+fzf 0.70.0
 github-cli 2.87.3
 glab 1.88.0
 gofumpt 0.9.2
