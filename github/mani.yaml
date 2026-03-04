@@ -195,3 +195,9 @@ projects:
       - main
     path: ./vscode-local-sync
     url: https://github.com/AnWeber/vscode-local-sync.git
+  volta:
+    tags:
+      - rust
+      - main
+    path: ./volta
+    url: https://github.com/AnWeber/volta.git
