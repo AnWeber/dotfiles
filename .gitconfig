@@ -165,6 +165,7 @@
     plus-style = syntax bluepaint.green
     syntax-theme = ansi
     zero-style = syntax
+
 [merge "theirs"]
 	name = Keep upstream changes
 	driver = cp -f '%B' '%A'
