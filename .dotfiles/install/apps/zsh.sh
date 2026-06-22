@@ -25,7 +25,3 @@ fi
 if [ ! -d "${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-better-npm-completion" ]; then
   git clone https://github.com/lukechilds/zsh-better-npm-completion ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-better-npm-completion
 fi
-
-if [ ! -d "${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-better-npm-completion" ]; then
-  git clone https://github.com/lukechilds/zsh-better-npm-completion ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-better-npm-completion
-fi

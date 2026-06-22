@@ -12,9 +12,7 @@ fi
 
 ~/.dotfiles/install/apps/git.sh
 ~/.dotfiles/install/apps/fonts.sh
-~/.dotfiles/install/apps/xbindkeys.sh
 ~/.dotfiles/install/apps/pip.sh
 ~/.dotfiles/install/apps/zsh.sh
 ~/.dotfiles/install/apps/asdf.sh
 ~/.dotfiles/install/apps/docker.sh
-~/.dotfiles/install/apps/xbindkey.sh
