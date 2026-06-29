@@ -169,3 +169,7 @@
 [merge "theirs"]
 	name = Keep upstream changes
 	driver = cp -f '%B' '%A'
+[credential "https://vcs01.rsint.net"]
+	helper =
+	helper = !/home/web_andr/.asdf/installs/glab/1.93.0/bin/glab auth git-credential
+
