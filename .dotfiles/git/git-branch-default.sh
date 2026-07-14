@@ -1,9 +1,1 @@
-
-allBranches=(main development develop master)
-
-for branch in ${allBranches[@]}; do
-  if git rev-parse --quiet --verify $branch &> /dev/null; then
-    echo $branch
-    break
-  fi
-done
+git remote show origin | sed -n '/HEAD branch/s/.*: //p'

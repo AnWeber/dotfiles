@@ -19,13 +19,16 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#1e88e5"
 plugins=(
   autoupdate
   gpg-agent
-  zoxide
   zsh-autosuggestions
   zsh-better-npm-completion
 )
 
 if type "xbindkeys" > /dev/null; then
   xbindkeys -f ~/.xbindkeysrc
+fi
+
+if type "zoxide" >  /dev/null; then
+  eval "$(zoxide init --cmd ${ZOXIDE_CMD_OVERRIDE:-z} zsh)"
 fi
 
 for file in $(find ~ -maxdepth 1 -name '*.env' -type f -prune | sort -nr  | tac ); do
@@ -46,6 +49,5 @@ export GPG_TTY=$(tty)
 export RIPGREP_CONFIG_PATH="$HOME/.dotfiles/settings/.ripgreprc"
 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
