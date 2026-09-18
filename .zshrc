@@ -37,13 +37,14 @@ done
 
 export PATH="$HOME/.local/bin:$HOME/.dotfiles/bin:$PATH"
 
+[[ ! -f ~/.dotfiles/zsh/index.zsh ]] || source ~/.dotfiles/zsh/index.zsh
+[[ ! -f ~/${LOCALENV}.zsh ]] || source ~/${LOCALENV}.zsh
+
 source $ZSH/oh-my-zsh.sh
 
 setopt globdots
 
 
-[[ ! -f ~/.dotfiles/zsh/index.zsh ]] || source ~/.dotfiles/zsh/index.zsh
-[[ ! -f ~/${LOCALENV}.zsh ]] || source ~/${LOCALENV}.zsh
 
 export GPG_TTY=$(tty)
 export RIPGREP_CONFIG_PATH="$HOME/.dotfiles/settings/.ripgreprc"

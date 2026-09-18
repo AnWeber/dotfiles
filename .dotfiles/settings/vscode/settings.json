@@ -379,5 +379,7 @@
   "yaml.customTags": [
     "!reference sequence"
   ],
-  "yaml.format.singleQuote": true
+  "yaml.format.singleQuote": true,
+  "intellij.region": "europe",
+  "intellij.dataSharing": "none"
 }
