@@ -381,5 +381,6 @@
   ],
   "yaml.format.singleQuote": true,
   "intellij.region": "europe",
-  "intellij.dataSharing": "none"
+  "intellij.dataSharing": "none",
+  "workbench.experimental.modernUI": false
 }

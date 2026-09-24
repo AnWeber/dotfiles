@@ -51,4 +51,4 @@ export RIPGREP_CONFIG_PATH="$HOME/.dotfiles/settings/.ripgreprc"
 
 
 # Vite+ bin (https://viteplus.dev)
-. "$HOME/.vite-plus/env"
+. "$HOME/.config/vite-plus/env"

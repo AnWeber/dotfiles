@@ -12,6 +12,5 @@ jq 1.8.1
 mani 0.32.0
 neovim stable
 ripgrep 14.1.1
-volta 2.0.2
 yq 4.52.4
 zoxide 0.9.9
