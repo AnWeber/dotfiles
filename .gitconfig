@@ -94,6 +94,8 @@
             echo last commit file modified $last_modified_commit_hash; \
             git diff $last_modified_commit_hash^ $filepath; \
        }; f"
+  # get last log message
+  lastlog = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -1
   # view log message of last commits
   lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
   # output current tag

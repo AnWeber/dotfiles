@@ -31,6 +31,7 @@ if type "zoxide" >  /dev/null; then
   eval "$(zoxide init --cmd ${ZOXIDE_CMD_OVERRIDE:-z} zsh)"
 fi
 
+
 for file in $(find ~ -maxdepth 1 -name '*.env' -type f -prune | sort -nr  | tac ); do
   export $(cat "$file" | xargs);
 done
